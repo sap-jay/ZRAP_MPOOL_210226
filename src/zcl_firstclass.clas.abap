@@ -14,7 +14,7 @@ ENDCLASS.
 
 CLASS zcl_firstclass IMPLEMENTATION.
   METHOD if_oo_adt_classrun~main.
-  out->write( 'hello world' ) .
+  out->write( 'hello world 1' ) .
   "PUSH Req"
   ENDMETHOD.
 ENDCLASS.
