@@ -1,0 +1,5 @@
+@EndUserText.label: 'Service Definition For Manage PO'
+define service ZSD_ManagePurchaseOrders {
+  expose ZC_PurchaseOrderH as poheader;
+  expose ZC_PurchaseOrderI as poitem;
+}
