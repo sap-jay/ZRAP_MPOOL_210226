@@ -1,5 +1,6 @@
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 @EndUserText.label: 'Purchase Order Header Consumption View'
+@Metadata.allowExtensions: true
 
 define root view entity ZC_PurchaseOrderH
   as projection on ZR_PurchaseOrderH_TP

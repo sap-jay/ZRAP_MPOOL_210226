@@ -1,5 +1,6 @@
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 @EndUserText.label: 'Consumption Projection View'
+@Metadata.allowExtensions: true
 define view entity ZC_PurchaseOrderI
   as projection on ZI_PurchaseOrderI
 {

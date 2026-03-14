@@ -1,0 +1,28 @@
+managed implementation in class zbp_r_purchaseorderh_tp unique;
+strict ( 2 );
+
+define behavior for ZR_PurchaseOrderH_TP //alias <alias_name>
+persistent table yekko
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create ( authorization : global );
+  update;
+  delete;
+  field ( readonly:update ) Ebeln;
+  association _poitem { create; }
+}
+
+define behavior for ZI_PurchaseOrderI //alias <alias_name>
+persistent table yekpo
+lock dependent by _poheader
+authorization dependent by _poheader
+//etag master <field_name>
+{
+  update;
+  delete;
+  field ( readonly ) Ebeln ;
+  field ( readonly:update ) Ebelp ;
+  association _poheader;
+}

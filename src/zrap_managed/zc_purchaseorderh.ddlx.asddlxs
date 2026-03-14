@@ -1,0 +1,48 @@
+@Metadata.layer: #CORE
+@UI.headerInfo: {
+    typeName: 'Purchase Order',
+    typeNamePlural: 'Purchase Orders',
+    typeImageUrl: 'sap-icon://wallet',
+    title: {
+        type: #STANDARD,
+        label: 'Purchase Order',
+        iconUrl: 'sap-icon://wallet',
+        value: 'Ebeln'
+    },
+    description: {
+        type: #STANDARD,
+        label: 'Purchase Order',
+        iconUrl: 'sap-icon://wallet',
+        value: 'Bukrs'
+        
+    }
+}
+annotate entity ZC_PurchaseOrderH with
+{
+  @UI.facet: [{ id: 'GeneralInfo', label: 'PO Header Information', type: #IDENTIFICATION_REFERENCE, position: 10, targetQualifier: 'Header' },
+              { id: 'LineItems', label: 'PO LineItems', type: #LINEITEM_REFERENCE, position: 20, targetElement: '_poitem' } ]
+
+
+
+  @UI.lineItem: [{ position: 10, importance: #HIGH, emphasized: true, label: 'Purchase Order' }]
+  @UI.identification: [{ position: 10, qualifier: 'Header', label: 'Purchase Order' }]
+
+  Ebeln;
+  @UI.lineItem: [{ position: 20, importance: #HIGH, emphasized: true, label: 'Company Code' }]
+  @UI.identification: [{ position: 20, qualifier: 'Header', label: 'Company Code' }]
+
+  Bukrs;
+  @UI.lineItem: [{ position: 30, importance: #HIGH, emphasized: true, label: 'Order Category' }]
+  Bstyp;
+  @UI.lineItem: [{ position: 40, importance: #MEDIUM, label: 'PO Type' }]
+  Bsart;
+  @UI.lineItem: [{ position: 50, importance: #LOW, label: 'Vendor' }]
+  Lifnr;
+  @UI.lineItem: [{ position: 60, importance: #LOW, label: 'Purchase Org' }]
+  Ekorg;
+  @UI.lineItem: [{ position: 70, importance: #LOW, label: 'Purchase Group' }]
+  Ekgrp;
+  @UI.lineItem: [{ position: 80, importance: #LOW, label: 'Customer' }]
+  Kunnr;
+
+}
