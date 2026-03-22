@@ -1,0 +1,4048 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'Matnr'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'Matnr'
+annotate view ZLCC_YMARA01LC with
+{
+  @EndUserText.label: 'Matnr'
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @UI.identification: [ {
+    position: 10 , 
+    label: 'Matnr'
+  } ]
+  @UI.lineItem: [ {
+    position: 10 , 
+    label: 'Matnr'
+  } ]
+  @UI.selectionField: [ {
+    position: 10 
+  } ]
+  Matnr;
+  
+  @EndUserText.label: 'Ersda'
+  @UI.identification: [ {
+    position: 20 , 
+    label: 'Ersda'
+  } ]
+  @UI.lineItem: [ {
+    position: 20 , 
+    label: 'Ersda'
+  } ]
+  @UI.selectionField: [ {
+    position: 20 
+  } ]
+  Ersda;
+  
+  @EndUserText.label: 'CreatedAtTime'
+  @UI.identification: [ {
+    position: 30 , 
+    label: 'CreatedAtTime'
+  } ]
+  @UI.lineItem: [ {
+    position: 30 , 
+    label: 'CreatedAtTime'
+  } ]
+  @UI.selectionField: [ {
+    position: 30 
+  } ]
+  CreatedAtTime;
+  
+  @EndUserText.label: 'Ernam'
+  @UI.identification: [ {
+    position: 40 , 
+    label: 'Ernam'
+  } ]
+  @UI.lineItem: [ {
+    position: 40 , 
+    label: 'Ernam'
+  } ]
+  @UI.selectionField: [ {
+    position: 40 
+  } ]
+  Ernam;
+  
+  @EndUserText.label: 'Laeda'
+  @UI.identification: [ {
+    position: 50 , 
+    label: 'Laeda'
+  } ]
+  @UI.lineItem: [ {
+    position: 50 , 
+    label: 'Laeda'
+  } ]
+  @UI.selectionField: [ {
+    position: 50 
+  } ]
+  Laeda;
+  
+  @EndUserText.label: 'Aenam'
+  @UI.identification: [ {
+    position: 60 , 
+    label: 'Aenam'
+  } ]
+  @UI.lineItem: [ {
+    position: 60 , 
+    label: 'Aenam'
+  } ]
+  @UI.selectionField: [ {
+    position: 60 
+  } ]
+  Aenam;
+  
+  @EndUserText.label: 'Vpsta'
+  @UI.identification: [ {
+    position: 70 , 
+    label: 'Vpsta'
+  } ]
+  @UI.lineItem: [ {
+    position: 70 , 
+    label: 'Vpsta'
+  } ]
+  @UI.selectionField: [ {
+    position: 70 
+  } ]
+  Vpsta;
+  
+  @EndUserText.label: 'Pstat'
+  @UI.identification: [ {
+    position: 80 , 
+    label: 'Pstat'
+  } ]
+  @UI.lineItem: [ {
+    position: 80 , 
+    label: 'Pstat'
+  } ]
+  @UI.selectionField: [ {
+    position: 80 
+  } ]
+  Pstat;
+  
+  @EndUserText.label: 'Lvorm'
+  @UI.identification: [ {
+    position: 90 , 
+    label: 'Lvorm'
+  } ]
+  @UI.lineItem: [ {
+    position: 90 , 
+    label: 'Lvorm'
+  } ]
+  @UI.selectionField: [ {
+    position: 90 
+  } ]
+  Lvorm;
+  
+  @EndUserText.label: 'Mtart'
+  @UI.identification: [ {
+    position: 100 , 
+    label: 'Mtart'
+  } ]
+  @UI.lineItem: [ {
+    position: 100 , 
+    label: 'Mtart'
+  } ]
+  @UI.selectionField: [ {
+    position: 100 
+  } ]
+  Mtart;
+  
+  @EndUserText.label: 'Mbrsh'
+  @UI.identification: [ {
+    position: 110 , 
+    label: 'Mbrsh'
+  } ]
+  @UI.lineItem: [ {
+    position: 110 , 
+    label: 'Mbrsh'
+  } ]
+  @UI.selectionField: [ {
+    position: 110 
+  } ]
+  Mbrsh;
+  
+  @EndUserText.label: 'Matkl'
+  @UI.identification: [ {
+    position: 120 , 
+    label: 'Matkl'
+  } ]
+  @UI.lineItem: [ {
+    position: 120 , 
+    label: 'Matkl'
+  } ]
+  @UI.selectionField: [ {
+    position: 120 
+  } ]
+  Matkl;
+  
+  @EndUserText.label: 'Bismt'
+  @UI.identification: [ {
+    position: 130 , 
+    label: 'Bismt'
+  } ]
+  @UI.lineItem: [ {
+    position: 130 , 
+    label: 'Bismt'
+  } ]
+  @UI.selectionField: [ {
+    position: 130 
+  } ]
+  Bismt;
+  
+  @EndUserText.label: 'Bstme'
+  @UI.identification: [ {
+    position: 140 , 
+    label: 'Bstme'
+  } ]
+  @UI.lineItem: [ {
+    position: 140 , 
+    label: 'Bstme'
+  } ]
+  @UI.selectionField: [ {
+    position: 140 
+  } ]
+  Bstme;
+  
+  @EndUserText.label: 'Zeinr'
+  @UI.identification: [ {
+    position: 150 , 
+    label: 'Zeinr'
+  } ]
+  @UI.lineItem: [ {
+    position: 150 , 
+    label: 'Zeinr'
+  } ]
+  @UI.selectionField: [ {
+    position: 150 
+  } ]
+  Zeinr;
+  
+  @EndUserText.label: 'Zeiar'
+  @UI.identification: [ {
+    position: 160 , 
+    label: 'Zeiar'
+  } ]
+  @UI.lineItem: [ {
+    position: 160 , 
+    label: 'Zeiar'
+  } ]
+  @UI.selectionField: [ {
+    position: 160 
+  } ]
+  Zeiar;
+  
+  @EndUserText.label: 'Zeivr'
+  @UI.identification: [ {
+    position: 170 , 
+    label: 'Zeivr'
+  } ]
+  @UI.lineItem: [ {
+    position: 170 , 
+    label: 'Zeivr'
+  } ]
+  @UI.selectionField: [ {
+    position: 170 
+  } ]
+  Zeivr;
+  
+  @EndUserText.label: 'Zeifo'
+  @UI.identification: [ {
+    position: 180 , 
+    label: 'Zeifo'
+  } ]
+  @UI.lineItem: [ {
+    position: 180 , 
+    label: 'Zeifo'
+  } ]
+  @UI.selectionField: [ {
+    position: 180 
+  } ]
+  Zeifo;
+  
+  @EndUserText.label: 'Aeszn'
+  @UI.identification: [ {
+    position: 190 , 
+    label: 'Aeszn'
+  } ]
+  @UI.lineItem: [ {
+    position: 190 , 
+    label: 'Aeszn'
+  } ]
+  @UI.selectionField: [ {
+    position: 190 
+  } ]
+  Aeszn;
+  
+  @EndUserText.label: 'Blatt'
+  @UI.identification: [ {
+    position: 200 , 
+    label: 'Blatt'
+  } ]
+  @UI.lineItem: [ {
+    position: 200 , 
+    label: 'Blatt'
+  } ]
+  @UI.selectionField: [ {
+    position: 200 
+  } ]
+  Blatt;
+  
+  @EndUserText.label: 'Blanz'
+  @UI.identification: [ {
+    position: 210 , 
+    label: 'Blanz'
+  } ]
+  @UI.lineItem: [ {
+    position: 210 , 
+    label: 'Blanz'
+  } ]
+  @UI.selectionField: [ {
+    position: 210 
+  } ]
+  Blanz;
+  
+  @EndUserText.label: 'Ferth'
+  @UI.identification: [ {
+    position: 220 , 
+    label: 'Ferth'
+  } ]
+  @UI.lineItem: [ {
+    position: 220 , 
+    label: 'Ferth'
+  } ]
+  @UI.selectionField: [ {
+    position: 220 
+  } ]
+  Ferth;
+  
+  @EndUserText.label: 'Formt'
+  @UI.identification: [ {
+    position: 230 , 
+    label: 'Formt'
+  } ]
+  @UI.lineItem: [ {
+    position: 230 , 
+    label: 'Formt'
+  } ]
+  @UI.selectionField: [ {
+    position: 230 
+  } ]
+  Formt;
+  
+  @EndUserText.label: 'Groes'
+  @UI.identification: [ {
+    position: 240 , 
+    label: 'Groes'
+  } ]
+  @UI.lineItem: [ {
+    position: 240 , 
+    label: 'Groes'
+  } ]
+  @UI.selectionField: [ {
+    position: 240 
+  } ]
+  Groes;
+  
+  @EndUserText.label: 'Wrkst'
+  @UI.identification: [ {
+    position: 250 , 
+    label: 'Wrkst'
+  } ]
+  @UI.lineItem: [ {
+    position: 250 , 
+    label: 'Wrkst'
+  } ]
+  @UI.selectionField: [ {
+    position: 250 
+  } ]
+  Wrkst;
+  
+  @EndUserText.label: 'Normt'
+  @UI.identification: [ {
+    position: 260 , 
+    label: 'Normt'
+  } ]
+  @UI.lineItem: [ {
+    position: 260 , 
+    label: 'Normt'
+  } ]
+  @UI.selectionField: [ {
+    position: 260 
+  } ]
+  Normt;
+  
+  @EndUserText.label: 'Labor'
+  @UI.identification: [ {
+    position: 270 , 
+    label: 'Labor'
+  } ]
+  @UI.lineItem: [ {
+    position: 270 , 
+    label: 'Labor'
+  } ]
+  @UI.selectionField: [ {
+    position: 270 
+  } ]
+  Labor;
+  
+  @EndUserText.label: 'Ekwsl'
+  @UI.identification: [ {
+    position: 280 , 
+    label: 'Ekwsl'
+  } ]
+  @UI.lineItem: [ {
+    position: 280 , 
+    label: 'Ekwsl'
+  } ]
+  @UI.selectionField: [ {
+    position: 280 
+  } ]
+  Ekwsl;
+  
+  @EndUserText.label: 'Brgew'
+  @UI.identification: [ {
+    position: 290 , 
+    label: 'Brgew'
+  } ]
+  @UI.lineItem: [ {
+    position: 290 , 
+    label: 'Brgew'
+  } ]
+  @UI.selectionField: [ {
+    position: 290 
+  } ]
+  Brgew;
+  
+  @EndUserText.label: 'Ntgew'
+  @UI.identification: [ {
+    position: 300 , 
+    label: 'Ntgew'
+  } ]
+  @UI.lineItem: [ {
+    position: 300 , 
+    label: 'Ntgew'
+  } ]
+  @UI.selectionField: [ {
+    position: 300 
+  } ]
+  Ntgew;
+  
+  @EndUserText.label: 'Volum'
+  @UI.identification: [ {
+    position: 310 , 
+    label: 'Volum'
+  } ]
+  @UI.lineItem: [ {
+    position: 310 , 
+    label: 'Volum'
+  } ]
+  @UI.selectionField: [ {
+    position: 310 
+  } ]
+  Volum;
+  
+  @EndUserText.label: 'Behvo'
+  @UI.identification: [ {
+    position: 320 , 
+    label: 'Behvo'
+  } ]
+  @UI.lineItem: [ {
+    position: 320 , 
+    label: 'Behvo'
+  } ]
+  @UI.selectionField: [ {
+    position: 320 
+  } ]
+  Behvo;
+  
+  @EndUserText.label: 'Raube'
+  @UI.identification: [ {
+    position: 330 , 
+    label: 'Raube'
+  } ]
+  @UI.lineItem: [ {
+    position: 330 , 
+    label: 'Raube'
+  } ]
+  @UI.selectionField: [ {
+    position: 330 
+  } ]
+  Raube;
+  
+  @EndUserText.label: 'Tempb'
+  @UI.identification: [ {
+    position: 340 , 
+    label: 'Tempb'
+  } ]
+  @UI.lineItem: [ {
+    position: 340 , 
+    label: 'Tempb'
+  } ]
+  @UI.selectionField: [ {
+    position: 340 
+  } ]
+  Tempb;
+  
+  @EndUserText.label: 'Disst'
+  @UI.identification: [ {
+    position: 350 , 
+    label: 'Disst'
+  } ]
+  @UI.lineItem: [ {
+    position: 350 , 
+    label: 'Disst'
+  } ]
+  @UI.selectionField: [ {
+    position: 350 
+  } ]
+  Disst;
+  
+  @EndUserText.label: 'Tragr'
+  @UI.identification: [ {
+    position: 360 , 
+    label: 'Tragr'
+  } ]
+  @UI.lineItem: [ {
+    position: 360 , 
+    label: 'Tragr'
+  } ]
+  @UI.selectionField: [ {
+    position: 360 
+  } ]
+  Tragr;
+  
+  @EndUserText.label: 'Stoff'
+  @UI.identification: [ {
+    position: 370 , 
+    label: 'Stoff'
+  } ]
+  @UI.lineItem: [ {
+    position: 370 , 
+    label: 'Stoff'
+  } ]
+  @UI.selectionField: [ {
+    position: 370 
+  } ]
+  Stoff;
+  
+  @EndUserText.label: 'Spart'
+  @UI.identification: [ {
+    position: 380 , 
+    label: 'Spart'
+  } ]
+  @UI.lineItem: [ {
+    position: 380 , 
+    label: 'Spart'
+  } ]
+  @UI.selectionField: [ {
+    position: 380 
+  } ]
+  Spart;
+  
+  @EndUserText.label: 'Kunnr'
+  @UI.identification: [ {
+    position: 390 , 
+    label: 'Kunnr'
+  } ]
+  @UI.lineItem: [ {
+    position: 390 , 
+    label: 'Kunnr'
+  } ]
+  @UI.selectionField: [ {
+    position: 390 
+  } ]
+  Kunnr;
+  
+  @EndUserText.label: 'Eannr'
+  @UI.identification: [ {
+    position: 400 , 
+    label: 'Eannr'
+  } ]
+  @UI.lineItem: [ {
+    position: 400 , 
+    label: 'Eannr'
+  } ]
+  @UI.selectionField: [ {
+    position: 400 
+  } ]
+  Eannr;
+  
+  @EndUserText.label: 'Wesch'
+  @UI.identification: [ {
+    position: 410 , 
+    label: 'Wesch'
+  } ]
+  @UI.lineItem: [ {
+    position: 410 , 
+    label: 'Wesch'
+  } ]
+  @UI.selectionField: [ {
+    position: 410 
+  } ]
+  Wesch;
+  
+  @EndUserText.label: 'Bwscl'
+  @UI.identification: [ {
+    position: 420 , 
+    label: 'Bwscl'
+  } ]
+  @UI.lineItem: [ {
+    position: 420 , 
+    label: 'Bwscl'
+  } ]
+  @UI.selectionField: [ {
+    position: 420 
+  } ]
+  Bwscl;
+  
+  @EndUserText.label: 'Saiso'
+  @UI.identification: [ {
+    position: 430 , 
+    label: 'Saiso'
+  } ]
+  @UI.lineItem: [ {
+    position: 430 , 
+    label: 'Saiso'
+  } ]
+  @UI.selectionField: [ {
+    position: 430 
+  } ]
+  Saiso;
+  
+  @EndUserText.label: 'Etiar'
+  @UI.identification: [ {
+    position: 440 , 
+    label: 'Etiar'
+  } ]
+  @UI.lineItem: [ {
+    position: 440 , 
+    label: 'Etiar'
+  } ]
+  @UI.selectionField: [ {
+    position: 440 
+  } ]
+  Etiar;
+  
+  @EndUserText.label: 'Etifo'
+  @UI.identification: [ {
+    position: 450 , 
+    label: 'Etifo'
+  } ]
+  @UI.lineItem: [ {
+    position: 450 , 
+    label: 'Etifo'
+  } ]
+  @UI.selectionField: [ {
+    position: 450 
+  } ]
+  Etifo;
+  
+  @EndUserText.label: 'Entar'
+  @UI.identification: [ {
+    position: 460 , 
+    label: 'Entar'
+  } ]
+  @UI.lineItem: [ {
+    position: 460 , 
+    label: 'Entar'
+  } ]
+  @UI.selectionField: [ {
+    position: 460 
+  } ]
+  Entar;
+  
+  @EndUserText.label: 'Ean11'
+  @UI.identification: [ {
+    position: 470 , 
+    label: 'Ean11'
+  } ]
+  @UI.lineItem: [ {
+    position: 470 , 
+    label: 'Ean11'
+  } ]
+  @UI.selectionField: [ {
+    position: 470 
+  } ]
+  Ean11;
+  
+  @EndUserText.label: 'Numtp'
+  @UI.identification: [ {
+    position: 480 , 
+    label: 'Numtp'
+  } ]
+  @UI.lineItem: [ {
+    position: 480 , 
+    label: 'Numtp'
+  } ]
+  @UI.selectionField: [ {
+    position: 480 
+  } ]
+  Numtp;
+  
+  @EndUserText.label: 'Laeng'
+  @UI.identification: [ {
+    position: 490 , 
+    label: 'Laeng'
+  } ]
+  @UI.lineItem: [ {
+    position: 490 , 
+    label: 'Laeng'
+  } ]
+  @UI.selectionField: [ {
+    position: 490 
+  } ]
+  Laeng;
+  
+  @EndUserText.label: 'Breit'
+  @UI.identification: [ {
+    position: 500 , 
+    label: 'Breit'
+  } ]
+  @UI.lineItem: [ {
+    position: 500 , 
+    label: 'Breit'
+  } ]
+  @UI.selectionField: [ {
+    position: 500 
+  } ]
+  Breit;
+  
+  @EndUserText.label: 'Hoehe'
+  @UI.identification: [ {
+    position: 510 , 
+    label: 'Hoehe'
+  } ]
+  @UI.lineItem: [ {
+    position: 510 , 
+    label: 'Hoehe'
+  } ]
+  @UI.selectionField: [ {
+    position: 510 
+  } ]
+  Hoehe;
+  
+  @EndUserText.label: 'Prdha'
+  @UI.identification: [ {
+    position: 520 , 
+    label: 'Prdha'
+  } ]
+  @UI.lineItem: [ {
+    position: 520 , 
+    label: 'Prdha'
+  } ]
+  @UI.selectionField: [ {
+    position: 520 
+  } ]
+  Prdha;
+  
+  @EndUserText.label: 'Aeklk'
+  @UI.identification: [ {
+    position: 530 , 
+    label: 'Aeklk'
+  } ]
+  @UI.lineItem: [ {
+    position: 530 , 
+    label: 'Aeklk'
+  } ]
+  @UI.selectionField: [ {
+    position: 530 
+  } ]
+  Aeklk;
+  
+  @EndUserText.label: 'Cadkz'
+  @UI.identification: [ {
+    position: 540 , 
+    label: 'Cadkz'
+  } ]
+  @UI.lineItem: [ {
+    position: 540 , 
+    label: 'Cadkz'
+  } ]
+  @UI.selectionField: [ {
+    position: 540 
+  } ]
+  Cadkz;
+  
+  @EndUserText.label: 'Qmpur'
+  @UI.identification: [ {
+    position: 550 , 
+    label: 'Qmpur'
+  } ]
+  @UI.lineItem: [ {
+    position: 550 , 
+    label: 'Qmpur'
+  } ]
+  @UI.selectionField: [ {
+    position: 550 
+  } ]
+  Qmpur;
+  
+  @EndUserText.label: 'Ergew'
+  @UI.identification: [ {
+    position: 560 , 
+    label: 'Ergew'
+  } ]
+  @UI.lineItem: [ {
+    position: 560 , 
+    label: 'Ergew'
+  } ]
+  @UI.selectionField: [ {
+    position: 560 
+  } ]
+  Ergew;
+  
+  @EndUserText.label: 'Ervol'
+  @UI.identification: [ {
+    position: 570 , 
+    label: 'Ervol'
+  } ]
+  @UI.lineItem: [ {
+    position: 570 , 
+    label: 'Ervol'
+  } ]
+  @UI.selectionField: [ {
+    position: 570 
+  } ]
+  Ervol;
+  
+  @EndUserText.label: 'Gewto'
+  @UI.identification: [ {
+    position: 580 , 
+    label: 'Gewto'
+  } ]
+  @UI.lineItem: [ {
+    position: 580 , 
+    label: 'Gewto'
+  } ]
+  @UI.selectionField: [ {
+    position: 580 
+  } ]
+  Gewto;
+  
+  @EndUserText.label: 'Volto'
+  @UI.identification: [ {
+    position: 590 , 
+    label: 'Volto'
+  } ]
+  @UI.lineItem: [ {
+    position: 590 , 
+    label: 'Volto'
+  } ]
+  @UI.selectionField: [ {
+    position: 590 
+  } ]
+  Volto;
+  
+  @EndUserText.label: 'Vabme'
+  @UI.identification: [ {
+    position: 600 , 
+    label: 'Vabme'
+  } ]
+  @UI.lineItem: [ {
+    position: 600 , 
+    label: 'Vabme'
+  } ]
+  @UI.selectionField: [ {
+    position: 600 
+  } ]
+  Vabme;
+  
+  @EndUserText.label: 'Kzrev'
+  @UI.identification: [ {
+    position: 610 , 
+    label: 'Kzrev'
+  } ]
+  @UI.lineItem: [ {
+    position: 610 , 
+    label: 'Kzrev'
+  } ]
+  @UI.selectionField: [ {
+    position: 610 
+  } ]
+  Kzrev;
+  
+  @EndUserText.label: 'Kzkfg'
+  @UI.identification: [ {
+    position: 620 , 
+    label: 'Kzkfg'
+  } ]
+  @UI.lineItem: [ {
+    position: 620 , 
+    label: 'Kzkfg'
+  } ]
+  @UI.selectionField: [ {
+    position: 620 
+  } ]
+  Kzkfg;
+  
+  @EndUserText.label: 'Xchpf'
+  @UI.identification: [ {
+    position: 630 , 
+    label: 'Xchpf'
+  } ]
+  @UI.lineItem: [ {
+    position: 630 , 
+    label: 'Xchpf'
+  } ]
+  @UI.selectionField: [ {
+    position: 630 
+  } ]
+  Xchpf;
+  
+  @EndUserText.label: 'Vhart'
+  @UI.identification: [ {
+    position: 640 , 
+    label: 'Vhart'
+  } ]
+  @UI.lineItem: [ {
+    position: 640 , 
+    label: 'Vhart'
+  } ]
+  @UI.selectionField: [ {
+    position: 640 
+  } ]
+  Vhart;
+  
+  @EndUserText.label: 'Fuelg'
+  @UI.identification: [ {
+    position: 650 , 
+    label: 'Fuelg'
+  } ]
+  @UI.lineItem: [ {
+    position: 650 , 
+    label: 'Fuelg'
+  } ]
+  @UI.selectionField: [ {
+    position: 650 
+  } ]
+  Fuelg;
+  
+  @EndUserText.label: 'Stfak'
+  @UI.identification: [ {
+    position: 660 , 
+    label: 'Stfak'
+  } ]
+  @UI.lineItem: [ {
+    position: 660 , 
+    label: 'Stfak'
+  } ]
+  @UI.selectionField: [ {
+    position: 660 
+  } ]
+  Stfak;
+  
+  @EndUserText.label: 'Magrv'
+  @UI.identification: [ {
+    position: 670 , 
+    label: 'Magrv'
+  } ]
+  @UI.lineItem: [ {
+    position: 670 , 
+    label: 'Magrv'
+  } ]
+  @UI.selectionField: [ {
+    position: 670 
+  } ]
+  Magrv;
+  
+  @EndUserText.label: 'Begru'
+  @UI.identification: [ {
+    position: 680 , 
+    label: 'Begru'
+  } ]
+  @UI.lineItem: [ {
+    position: 680 , 
+    label: 'Begru'
+  } ]
+  @UI.selectionField: [ {
+    position: 680 
+  } ]
+  Begru;
+  
+  @EndUserText.label: 'Datab'
+  @UI.identification: [ {
+    position: 690 , 
+    label: 'Datab'
+  } ]
+  @UI.lineItem: [ {
+    position: 690 , 
+    label: 'Datab'
+  } ]
+  @UI.selectionField: [ {
+    position: 690 
+  } ]
+  Datab;
+  
+  @EndUserText.label: 'Liqdt'
+  @UI.identification: [ {
+    position: 700 , 
+    label: 'Liqdt'
+  } ]
+  @UI.lineItem: [ {
+    position: 700 , 
+    label: 'Liqdt'
+  } ]
+  @UI.selectionField: [ {
+    position: 700 
+  } ]
+  Liqdt;
+  
+  @EndUserText.label: 'Saisj'
+  @UI.identification: [ {
+    position: 710 , 
+    label: 'Saisj'
+  } ]
+  @UI.lineItem: [ {
+    position: 710 , 
+    label: 'Saisj'
+  } ]
+  @UI.selectionField: [ {
+    position: 710 
+  } ]
+  Saisj;
+  
+  @EndUserText.label: 'Plgtp'
+  @UI.identification: [ {
+    position: 720 , 
+    label: 'Plgtp'
+  } ]
+  @UI.lineItem: [ {
+    position: 720 , 
+    label: 'Plgtp'
+  } ]
+  @UI.selectionField: [ {
+    position: 720 
+  } ]
+  Plgtp;
+  
+  @EndUserText.label: 'Mlgut'
+  @UI.identification: [ {
+    position: 730 , 
+    label: 'Mlgut'
+  } ]
+  @UI.lineItem: [ {
+    position: 730 , 
+    label: 'Mlgut'
+  } ]
+  @UI.selectionField: [ {
+    position: 730 
+  } ]
+  Mlgut;
+  
+  @EndUserText.label: 'Extwg'
+  @UI.identification: [ {
+    position: 740 , 
+    label: 'Extwg'
+  } ]
+  @UI.lineItem: [ {
+    position: 740 , 
+    label: 'Extwg'
+  } ]
+  @UI.selectionField: [ {
+    position: 740 
+  } ]
+  Extwg;
+  
+  @EndUserText.label: 'Satnr'
+  @UI.identification: [ {
+    position: 750 , 
+    label: 'Satnr'
+  } ]
+  @UI.lineItem: [ {
+    position: 750 , 
+    label: 'Satnr'
+  } ]
+  @UI.selectionField: [ {
+    position: 750 
+  } ]
+  Satnr;
+  
+  @EndUserText.label: 'Attyp'
+  @UI.identification: [ {
+    position: 760 , 
+    label: 'Attyp'
+  } ]
+  @UI.lineItem: [ {
+    position: 760 , 
+    label: 'Attyp'
+  } ]
+  @UI.selectionField: [ {
+    position: 760 
+  } ]
+  Attyp;
+  
+  @EndUserText.label: 'Kzkup'
+  @UI.identification: [ {
+    position: 770 , 
+    label: 'Kzkup'
+  } ]
+  @UI.lineItem: [ {
+    position: 770 , 
+    label: 'Kzkup'
+  } ]
+  @UI.selectionField: [ {
+    position: 770 
+  } ]
+  Kzkup;
+  
+  @EndUserText.label: 'Kznfm'
+  @UI.identification: [ {
+    position: 780 , 
+    label: 'Kznfm'
+  } ]
+  @UI.lineItem: [ {
+    position: 780 , 
+    label: 'Kznfm'
+  } ]
+  @UI.selectionField: [ {
+    position: 780 
+  } ]
+  Kznfm;
+  
+  @EndUserText.label: 'Pmata'
+  @UI.identification: [ {
+    position: 790 , 
+    label: 'Pmata'
+  } ]
+  @UI.lineItem: [ {
+    position: 790 , 
+    label: 'Pmata'
+  } ]
+  @UI.selectionField: [ {
+    position: 790 
+  } ]
+  Pmata;
+  
+  @EndUserText.label: 'Mstae'
+  @UI.identification: [ {
+    position: 800 , 
+    label: 'Mstae'
+  } ]
+  @UI.lineItem: [ {
+    position: 800 , 
+    label: 'Mstae'
+  } ]
+  @UI.selectionField: [ {
+    position: 800 
+  } ]
+  Mstae;
+  
+  @EndUserText.label: 'Mstav'
+  @UI.identification: [ {
+    position: 810 , 
+    label: 'Mstav'
+  } ]
+  @UI.lineItem: [ {
+    position: 810 , 
+    label: 'Mstav'
+  } ]
+  @UI.selectionField: [ {
+    position: 810 
+  } ]
+  Mstav;
+  
+  @EndUserText.label: 'Mstde'
+  @UI.identification: [ {
+    position: 820 , 
+    label: 'Mstde'
+  } ]
+  @UI.lineItem: [ {
+    position: 820 , 
+    label: 'Mstde'
+  } ]
+  @UI.selectionField: [ {
+    position: 820 
+  } ]
+  Mstde;
+  
+  @EndUserText.label: 'Mstdv'
+  @UI.identification: [ {
+    position: 830 , 
+    label: 'Mstdv'
+  } ]
+  @UI.lineItem: [ {
+    position: 830 , 
+    label: 'Mstdv'
+  } ]
+  @UI.selectionField: [ {
+    position: 830 
+  } ]
+  Mstdv;
+  
+  @EndUserText.label: 'Taklv'
+  @UI.identification: [ {
+    position: 840 , 
+    label: 'Taklv'
+  } ]
+  @UI.lineItem: [ {
+    position: 840 , 
+    label: 'Taklv'
+  } ]
+  @UI.selectionField: [ {
+    position: 840 
+  } ]
+  Taklv;
+  
+  @EndUserText.label: 'Rbnrm'
+  @UI.identification: [ {
+    position: 850 , 
+    label: 'Rbnrm'
+  } ]
+  @UI.lineItem: [ {
+    position: 850 , 
+    label: 'Rbnrm'
+  } ]
+  @UI.selectionField: [ {
+    position: 850 
+  } ]
+  Rbnrm;
+  
+  @EndUserText.label: 'Mhdrz'
+  @UI.identification: [ {
+    position: 860 , 
+    label: 'Mhdrz'
+  } ]
+  @UI.lineItem: [ {
+    position: 860 , 
+    label: 'Mhdrz'
+  } ]
+  @UI.selectionField: [ {
+    position: 860 
+  } ]
+  Mhdrz;
+  
+  @EndUserText.label: 'Mhdhb'
+  @UI.identification: [ {
+    position: 870 , 
+    label: 'Mhdhb'
+  } ]
+  @UI.lineItem: [ {
+    position: 870 , 
+    label: 'Mhdhb'
+  } ]
+  @UI.selectionField: [ {
+    position: 870 
+  } ]
+  Mhdhb;
+  
+  @EndUserText.label: 'Mhdlp'
+  @UI.identification: [ {
+    position: 880 , 
+    label: 'Mhdlp'
+  } ]
+  @UI.lineItem: [ {
+    position: 880 , 
+    label: 'Mhdlp'
+  } ]
+  @UI.selectionField: [ {
+    position: 880 
+  } ]
+  Mhdlp;
+  
+  @EndUserText.label: 'Inhal'
+  @UI.identification: [ {
+    position: 890 , 
+    label: 'Inhal'
+  } ]
+  @UI.lineItem: [ {
+    position: 890 , 
+    label: 'Inhal'
+  } ]
+  @UI.selectionField: [ {
+    position: 890 
+  } ]
+  Inhal;
+  
+  @EndUserText.label: 'Vpreh'
+  @UI.identification: [ {
+    position: 900 , 
+    label: 'Vpreh'
+  } ]
+  @UI.lineItem: [ {
+    position: 900 , 
+    label: 'Vpreh'
+  } ]
+  @UI.selectionField: [ {
+    position: 900 
+  } ]
+  Vpreh;
+  
+  @EndUserText.label: 'Etiag'
+  @UI.identification: [ {
+    position: 910 , 
+    label: 'Etiag'
+  } ]
+  @UI.lineItem: [ {
+    position: 910 , 
+    label: 'Etiag'
+  } ]
+  @UI.selectionField: [ {
+    position: 910 
+  } ]
+  Etiag;
+  
+  @EndUserText.label: 'Inhbr'
+  @UI.identification: [ {
+    position: 920 , 
+    label: 'Inhbr'
+  } ]
+  @UI.lineItem: [ {
+    position: 920 , 
+    label: 'Inhbr'
+  } ]
+  @UI.selectionField: [ {
+    position: 920 
+  } ]
+  Inhbr;
+  
+  @EndUserText.label: 'Cmeth'
+  @UI.identification: [ {
+    position: 930 , 
+    label: 'Cmeth'
+  } ]
+  @UI.lineItem: [ {
+    position: 930 , 
+    label: 'Cmeth'
+  } ]
+  @UI.selectionField: [ {
+    position: 930 
+  } ]
+  Cmeth;
+  
+  @EndUserText.label: 'Cuobf'
+  @UI.identification: [ {
+    position: 940 , 
+    label: 'Cuobf'
+  } ]
+  @UI.lineItem: [ {
+    position: 940 , 
+    label: 'Cuobf'
+  } ]
+  @UI.selectionField: [ {
+    position: 940 
+  } ]
+  Cuobf;
+  
+  @EndUserText.label: 'Kzumw'
+  @UI.identification: [ {
+    position: 950 , 
+    label: 'Kzumw'
+  } ]
+  @UI.lineItem: [ {
+    position: 950 , 
+    label: 'Kzumw'
+  } ]
+  @UI.selectionField: [ {
+    position: 950 
+  } ]
+  Kzumw;
+  
+  @EndUserText.label: 'Kosch'
+  @UI.identification: [ {
+    position: 960 , 
+    label: 'Kosch'
+  } ]
+  @UI.lineItem: [ {
+    position: 960 , 
+    label: 'Kosch'
+  } ]
+  @UI.selectionField: [ {
+    position: 960 
+  } ]
+  Kosch;
+  
+  @EndUserText.label: 'Sprof'
+  @UI.identification: [ {
+    position: 970 , 
+    label: 'Sprof'
+  } ]
+  @UI.lineItem: [ {
+    position: 970 , 
+    label: 'Sprof'
+  } ]
+  @UI.selectionField: [ {
+    position: 970 
+  } ]
+  Sprof;
+  
+  @EndUserText.label: 'Nrfhg'
+  @UI.identification: [ {
+    position: 980 , 
+    label: 'Nrfhg'
+  } ]
+  @UI.lineItem: [ {
+    position: 980 , 
+    label: 'Nrfhg'
+  } ]
+  @UI.selectionField: [ {
+    position: 980 
+  } ]
+  Nrfhg;
+  
+  @EndUserText.label: 'Mfrpn'
+  @UI.identification: [ {
+    position: 990 , 
+    label: 'Mfrpn'
+  } ]
+  @UI.lineItem: [ {
+    position: 990 , 
+    label: 'Mfrpn'
+  } ]
+  @UI.selectionField: [ {
+    position: 990 
+  } ]
+  Mfrpn;
+  
+  @EndUserText.label: 'Mfrnr'
+  @UI.identification: [ {
+    position: 1000 , 
+    label: 'Mfrnr'
+  } ]
+  @UI.lineItem: [ {
+    position: 1000 , 
+    label: 'Mfrnr'
+  } ]
+  @UI.selectionField: [ {
+    position: 1000 
+  } ]
+  Mfrnr;
+  
+  @EndUserText.label: 'Bmatn'
+  @UI.identification: [ {
+    position: 1010 , 
+    label: 'Bmatn'
+  } ]
+  @UI.lineItem: [ {
+    position: 1010 , 
+    label: 'Bmatn'
+  } ]
+  @UI.selectionField: [ {
+    position: 1010 
+  } ]
+  Bmatn;
+  
+  @EndUserText.label: 'Mprof'
+  @UI.identification: [ {
+    position: 1020 , 
+    label: 'Mprof'
+  } ]
+  @UI.lineItem: [ {
+    position: 1020 , 
+    label: 'Mprof'
+  } ]
+  @UI.selectionField: [ {
+    position: 1020 
+  } ]
+  Mprof;
+  
+  @EndUserText.label: 'Kzwsm'
+  @UI.identification: [ {
+    position: 1030 , 
+    label: 'Kzwsm'
+  } ]
+  @UI.lineItem: [ {
+    position: 1030 , 
+    label: 'Kzwsm'
+  } ]
+  @UI.selectionField: [ {
+    position: 1030 
+  } ]
+  Kzwsm;
+  
+  @EndUserText.label: 'Saity'
+  @UI.identification: [ {
+    position: 1040 , 
+    label: 'Saity'
+  } ]
+  @UI.lineItem: [ {
+    position: 1040 , 
+    label: 'Saity'
+  } ]
+  @UI.selectionField: [ {
+    position: 1040 
+  } ]
+  Saity;
+  
+  @EndUserText.label: 'Profl'
+  @UI.identification: [ {
+    position: 1050 , 
+    label: 'Profl'
+  } ]
+  @UI.lineItem: [ {
+    position: 1050 , 
+    label: 'Profl'
+  } ]
+  @UI.selectionField: [ {
+    position: 1050 
+  } ]
+  Profl;
+  
+  @EndUserText.label: 'Ihivi'
+  @UI.identification: [ {
+    position: 1060 , 
+    label: 'Ihivi'
+  } ]
+  @UI.lineItem: [ {
+    position: 1060 , 
+    label: 'Ihivi'
+  } ]
+  @UI.selectionField: [ {
+    position: 1060 
+  } ]
+  Ihivi;
+  
+  @EndUserText.label: 'Iloos'
+  @UI.identification: [ {
+    position: 1070 , 
+    label: 'Iloos'
+  } ]
+  @UI.lineItem: [ {
+    position: 1070 , 
+    label: 'Iloos'
+  } ]
+  @UI.selectionField: [ {
+    position: 1070 
+  } ]
+  Iloos;
+  
+  @EndUserText.label: 'Serlv'
+  @UI.identification: [ {
+    position: 1080 , 
+    label: 'Serlv'
+  } ]
+  @UI.lineItem: [ {
+    position: 1080 , 
+    label: 'Serlv'
+  } ]
+  @UI.selectionField: [ {
+    position: 1080 
+  } ]
+  Serlv;
+  
+  @EndUserText.label: 'Kzgvh'
+  @UI.identification: [ {
+    position: 1090 , 
+    label: 'Kzgvh'
+  } ]
+  @UI.lineItem: [ {
+    position: 1090 , 
+    label: 'Kzgvh'
+  } ]
+  @UI.selectionField: [ {
+    position: 1090 
+  } ]
+  Kzgvh;
+  
+  @EndUserText.label: 'Xgchp'
+  @UI.identification: [ {
+    position: 1100 , 
+    label: 'Xgchp'
+  } ]
+  @UI.lineItem: [ {
+    position: 1100 , 
+    label: 'Xgchp'
+  } ]
+  @UI.selectionField: [ {
+    position: 1100 
+  } ]
+  Xgchp;
+  
+  @EndUserText.label: 'Kzeff'
+  @UI.identification: [ {
+    position: 1110 , 
+    label: 'Kzeff'
+  } ]
+  @UI.lineItem: [ {
+    position: 1110 , 
+    label: 'Kzeff'
+  } ]
+  @UI.selectionField: [ {
+    position: 1110 
+  } ]
+  Kzeff;
+  
+  @EndUserText.label: 'Compl'
+  @UI.identification: [ {
+    position: 1120 , 
+    label: 'Compl'
+  } ]
+  @UI.lineItem: [ {
+    position: 1120 , 
+    label: 'Compl'
+  } ]
+  @UI.selectionField: [ {
+    position: 1120 
+  } ]
+  Compl;
+  
+  @EndUserText.label: 'Iprkz'
+  @UI.identification: [ {
+    position: 1130 , 
+    label: 'Iprkz'
+  } ]
+  @UI.lineItem: [ {
+    position: 1130 , 
+    label: 'Iprkz'
+  } ]
+  @UI.selectionField: [ {
+    position: 1130 
+  } ]
+  Iprkz;
+  
+  @EndUserText.label: 'Rdmhd'
+  @UI.identification: [ {
+    position: 1140 , 
+    label: 'Rdmhd'
+  } ]
+  @UI.lineItem: [ {
+    position: 1140 , 
+    label: 'Rdmhd'
+  } ]
+  @UI.selectionField: [ {
+    position: 1140 
+  } ]
+  Rdmhd;
+  
+  @EndUserText.label: 'Przus'
+  @UI.identification: [ {
+    position: 1150 , 
+    label: 'Przus'
+  } ]
+  @UI.lineItem: [ {
+    position: 1150 , 
+    label: 'Przus'
+  } ]
+  @UI.selectionField: [ {
+    position: 1150 
+  } ]
+  Przus;
+  
+  @EndUserText.label: 'MtposMara'
+  @UI.identification: [ {
+    position: 1160 , 
+    label: 'MtposMara'
+  } ]
+  @UI.lineItem: [ {
+    position: 1160 , 
+    label: 'MtposMara'
+  } ]
+  @UI.selectionField: [ {
+    position: 1160 
+  } ]
+  MtposMara;
+  
+  @EndUserText.label: 'Bflme'
+  @UI.identification: [ {
+    position: 1170 , 
+    label: 'Bflme'
+  } ]
+  @UI.lineItem: [ {
+    position: 1170 , 
+    label: 'Bflme'
+  } ]
+  @UI.selectionField: [ {
+    position: 1170 
+  } ]
+  Bflme;
+  
+  @EndUserText.label: 'Matfi'
+  @UI.identification: [ {
+    position: 1180 , 
+    label: 'Matfi'
+  } ]
+  @UI.lineItem: [ {
+    position: 1180 , 
+    label: 'Matfi'
+  } ]
+  @UI.selectionField: [ {
+    position: 1180 
+  } ]
+  Matfi;
+  
+  @EndUserText.label: 'Cmrel'
+  @UI.identification: [ {
+    position: 1190 , 
+    label: 'Cmrel'
+  } ]
+  @UI.lineItem: [ {
+    position: 1190 , 
+    label: 'Cmrel'
+  } ]
+  @UI.selectionField: [ {
+    position: 1190 
+  } ]
+  Cmrel;
+  
+  @EndUserText.label: 'Bbtyp'
+  @UI.identification: [ {
+    position: 1200 , 
+    label: 'Bbtyp'
+  } ]
+  @UI.lineItem: [ {
+    position: 1200 , 
+    label: 'Bbtyp'
+  } ]
+  @UI.selectionField: [ {
+    position: 1200 
+  } ]
+  Bbtyp;
+  
+  @EndUserText.label: 'SledBbd'
+  @UI.identification: [ {
+    position: 1210 , 
+    label: 'SledBbd'
+  } ]
+  @UI.lineItem: [ {
+    position: 1210 , 
+    label: 'SledBbd'
+  } ]
+  @UI.selectionField: [ {
+    position: 1210 
+  } ]
+  SledBbd;
+  
+  @EndUserText.label: 'GtinVariant'
+  @UI.identification: [ {
+    position: 1220 , 
+    label: 'GtinVariant'
+  } ]
+  @UI.lineItem: [ {
+    position: 1220 , 
+    label: 'GtinVariant'
+  } ]
+  @UI.selectionField: [ {
+    position: 1220 
+  } ]
+  GtinVariant;
+  
+  @EndUserText.label: 'Gennr'
+  @UI.identification: [ {
+    position: 1230 , 
+    label: 'Gennr'
+  } ]
+  @UI.lineItem: [ {
+    position: 1230 , 
+    label: 'Gennr'
+  } ]
+  @UI.selectionField: [ {
+    position: 1230 
+  } ]
+  Gennr;
+  
+  @EndUserText.label: 'Rmatp'
+  @UI.identification: [ {
+    position: 1240 , 
+    label: 'Rmatp'
+  } ]
+  @UI.lineItem: [ {
+    position: 1240 , 
+    label: 'Rmatp'
+  } ]
+  @UI.selectionField: [ {
+    position: 1240 
+  } ]
+  Rmatp;
+  
+  @EndUserText.label: 'GdsRelevant'
+  @UI.identification: [ {
+    position: 1250 , 
+    label: 'GdsRelevant'
+  } ]
+  @UI.lineItem: [ {
+    position: 1250 , 
+    label: 'GdsRelevant'
+  } ]
+  @UI.selectionField: [ {
+    position: 1250 
+  } ]
+  GdsRelevant;
+  
+  @EndUserText.label: 'Weora'
+  @UI.identification: [ {
+    position: 1260 , 
+    label: 'Weora'
+  } ]
+  @UI.lineItem: [ {
+    position: 1260 , 
+    label: 'Weora'
+  } ]
+  @UI.selectionField: [ {
+    position: 1260 
+  } ]
+  Weora;
+  
+  @EndUserText.label: 'HutypDflt'
+  @UI.identification: [ {
+    position: 1270 , 
+    label: 'HutypDflt'
+  } ]
+  @UI.lineItem: [ {
+    position: 1270 , 
+    label: 'HutypDflt'
+  } ]
+  @UI.selectionField: [ {
+    position: 1270 
+  } ]
+  HutypDflt;
+  
+  @EndUserText.label: 'Pilferable'
+  @UI.identification: [ {
+    position: 1280 , 
+    label: 'Pilferable'
+  } ]
+  @UI.lineItem: [ {
+    position: 1280 , 
+    label: 'Pilferable'
+  } ]
+  @UI.selectionField: [ {
+    position: 1280 
+  } ]
+  Pilferable;
+  
+  @EndUserText.label: 'Whstc'
+  @UI.identification: [ {
+    position: 1290 , 
+    label: 'Whstc'
+  } ]
+  @UI.lineItem: [ {
+    position: 1290 , 
+    label: 'Whstc'
+  } ]
+  @UI.selectionField: [ {
+    position: 1290 
+  } ]
+  Whstc;
+  
+  @EndUserText.label: 'Whmatgr'
+  @UI.identification: [ {
+    position: 1300 , 
+    label: 'Whmatgr'
+  } ]
+  @UI.lineItem: [ {
+    position: 1300 , 
+    label: 'Whmatgr'
+  } ]
+  @UI.selectionField: [ {
+    position: 1300 
+  } ]
+  Whmatgr;
+  
+  @EndUserText.label: 'Hndlcode'
+  @UI.identification: [ {
+    position: 1310 , 
+    label: 'Hndlcode'
+  } ]
+  @UI.lineItem: [ {
+    position: 1310 , 
+    label: 'Hndlcode'
+  } ]
+  @UI.selectionField: [ {
+    position: 1310 
+  } ]
+  Hndlcode;
+  
+  @EndUserText.label: 'Hazmat'
+  @UI.identification: [ {
+    position: 1320 , 
+    label: 'Hazmat'
+  } ]
+  @UI.lineItem: [ {
+    position: 1320 , 
+    label: 'Hazmat'
+  } ]
+  @UI.selectionField: [ {
+    position: 1320 
+  } ]
+  Hazmat;
+  
+  @EndUserText.label: 'Hutyp'
+  @UI.identification: [ {
+    position: 1330 , 
+    label: 'Hutyp'
+  } ]
+  @UI.lineItem: [ {
+    position: 1330 , 
+    label: 'Hutyp'
+  } ]
+  @UI.selectionField: [ {
+    position: 1330 
+  } ]
+  Hutyp;
+  
+  @EndUserText.label: 'TareVar'
+  @UI.identification: [ {
+    position: 1340 , 
+    label: 'TareVar'
+  } ]
+  @UI.lineItem: [ {
+    position: 1340 , 
+    label: 'TareVar'
+  } ]
+  @UI.selectionField: [ {
+    position: 1340 
+  } ]
+  TareVar;
+  
+  @EndUserText.label: 'Maxc'
+  @UI.identification: [ {
+    position: 1350 , 
+    label: 'Maxc'
+  } ]
+  @UI.lineItem: [ {
+    position: 1350 , 
+    label: 'Maxc'
+  } ]
+  @UI.selectionField: [ {
+    position: 1350 
+  } ]
+  Maxc;
+  
+  @EndUserText.label: 'MaxcTol'
+  @UI.identification: [ {
+    position: 1360 , 
+    label: 'MaxcTol'
+  } ]
+  @UI.lineItem: [ {
+    position: 1360 , 
+    label: 'MaxcTol'
+  } ]
+  @UI.selectionField: [ {
+    position: 1360 
+  } ]
+  MaxcTol;
+  
+  @EndUserText.label: 'Maxl'
+  @UI.identification: [ {
+    position: 1370 , 
+    label: 'Maxl'
+  } ]
+  @UI.lineItem: [ {
+    position: 1370 , 
+    label: 'Maxl'
+  } ]
+  @UI.selectionField: [ {
+    position: 1370 
+  } ]
+  Maxl;
+  
+  @EndUserText.label: 'Maxb'
+  @UI.identification: [ {
+    position: 1380 , 
+    label: 'Maxb'
+  } ]
+  @UI.lineItem: [ {
+    position: 1380 , 
+    label: 'Maxb'
+  } ]
+  @UI.selectionField: [ {
+    position: 1380 
+  } ]
+  Maxb;
+  
+  @EndUserText.label: 'Maxh'
+  @UI.identification: [ {
+    position: 1390 , 
+    label: 'Maxh'
+  } ]
+  @UI.lineItem: [ {
+    position: 1390 , 
+    label: 'Maxh'
+  } ]
+  @UI.selectionField: [ {
+    position: 1390 
+  } ]
+  Maxh;
+  
+  @EndUserText.label: 'Herkl'
+  @UI.identification: [ {
+    position: 1400 , 
+    label: 'Herkl'
+  } ]
+  @UI.lineItem: [ {
+    position: 1400 , 
+    label: 'Herkl'
+  } ]
+  @UI.selectionField: [ {
+    position: 1400 
+  } ]
+  Herkl;
+  
+  @EndUserText.label: 'Mfrgr'
+  @UI.identification: [ {
+    position: 1410 , 
+    label: 'Mfrgr'
+  } ]
+  @UI.lineItem: [ {
+    position: 1410 , 
+    label: 'Mfrgr'
+  } ]
+  @UI.selectionField: [ {
+    position: 1410 
+  } ]
+  Mfrgr;
+  
+  @EndUserText.label: 'Qqtime'
+  @UI.identification: [ {
+    position: 1420 , 
+    label: 'Qqtime'
+  } ]
+  @UI.lineItem: [ {
+    position: 1420 , 
+    label: 'Qqtime'
+  } ]
+  @UI.selectionField: [ {
+    position: 1420 
+  } ]
+  Qqtime;
+  
+  @EndUserText.label: 'Qgrp'
+  @UI.identification: [ {
+    position: 1430 , 
+    label: 'Qgrp'
+  } ]
+  @UI.lineItem: [ {
+    position: 1430 , 
+    label: 'Qgrp'
+  } ]
+  @UI.selectionField: [ {
+    position: 1430 
+  } ]
+  Qgrp;
+  
+  @EndUserText.label: 'Serial'
+  @UI.identification: [ {
+    position: 1440 , 
+    label: 'Serial'
+  } ]
+  @UI.lineItem: [ {
+    position: 1440 , 
+    label: 'Serial'
+  } ]
+  @UI.selectionField: [ {
+    position: 1440 
+  } ]
+  Serial;
+  
+  @EndUserText.label: 'PsSmartform'
+  @UI.identification: [ {
+    position: 1450 , 
+    label: 'PsSmartform'
+  } ]
+  @UI.lineItem: [ {
+    position: 1450 , 
+    label: 'PsSmartform'
+  } ]
+  @UI.selectionField: [ {
+    position: 1450 
+  } ]
+  PsSmartform;
+  
+  @EndUserText.label: 'Logunit'
+  @UI.identification: [ {
+    position: 1460 , 
+    label: 'Logunit'
+  } ]
+  @UI.lineItem: [ {
+    position: 1460 , 
+    label: 'Logunit'
+  } ]
+  @UI.selectionField: [ {
+    position: 1460 
+  } ]
+  Logunit;
+  
+  @EndUserText.label: 'Cwqrel'
+  @UI.identification: [ {
+    position: 1470 , 
+    label: 'Cwqrel'
+  } ]
+  @UI.lineItem: [ {
+    position: 1470 , 
+    label: 'Cwqrel'
+  } ]
+  @UI.selectionField: [ {
+    position: 1470 
+  } ]
+  Cwqrel;
+  
+  @EndUserText.label: 'Cwqproc'
+  @UI.identification: [ {
+    position: 1480 , 
+    label: 'Cwqproc'
+  } ]
+  @UI.lineItem: [ {
+    position: 1480 , 
+    label: 'Cwqproc'
+  } ]
+  @UI.selectionField: [ {
+    position: 1480 
+  } ]
+  Cwqproc;
+  
+  @EndUserText.label: 'Cwqtolgr'
+  @UI.identification: [ {
+    position: 1490 , 
+    label: 'Cwqtolgr'
+  } ]
+  @UI.lineItem: [ {
+    position: 1490 , 
+    label: 'Cwqtolgr'
+  } ]
+  @UI.selectionField: [ {
+    position: 1490 
+  } ]
+  Cwqtolgr;
+  
+  @EndUserText.label: 'Adprof'
+  @UI.identification: [ {
+    position: 1500 , 
+    label: 'Adprof'
+  } ]
+  @UI.lineItem: [ {
+    position: 1500 , 
+    label: 'Adprof'
+  } ]
+  @UI.selectionField: [ {
+    position: 1500 
+  } ]
+  Adprof;
+  
+  @EndUserText.label: 'Ipmipproduct'
+  @UI.identification: [ {
+    position: 1510 , 
+    label: 'Ipmipproduct'
+  } ]
+  @UI.lineItem: [ {
+    position: 1510 , 
+    label: 'Ipmipproduct'
+  } ]
+  @UI.selectionField: [ {
+    position: 1510 
+  } ]
+  Ipmipproduct;
+  
+  @EndUserText.label: 'AllowPmatIgno'
+  @UI.identification: [ {
+    position: 1520 , 
+    label: 'AllowPmatIgno'
+  } ]
+  @UI.lineItem: [ {
+    position: 1520 , 
+    label: 'AllowPmatIgno'
+  } ]
+  @UI.selectionField: [ {
+    position: 1520 
+  } ]
+  AllowPmatIgno;
+  
+  @EndUserText.label: 'Medium'
+  @UI.identification: [ {
+    position: 1530 , 
+    label: 'Medium'
+  } ]
+  @UI.lineItem: [ {
+    position: 1530 , 
+    label: 'Medium'
+  } ]
+  @UI.selectionField: [ {
+    position: 1530 
+  } ]
+  Medium;
+  
+  @EndUserText.label: 'Commodity'
+  @UI.identification: [ {
+    position: 1540 , 
+    label: 'Commodity'
+  } ]
+  @UI.lineItem: [ {
+    position: 1540 , 
+    label: 'Commodity'
+  } ]
+  @UI.selectionField: [ {
+    position: 1540 
+  } ]
+  Commodity;
+  
+  @EndUserText.label: 'AnimalOrigin'
+  @UI.identification: [ {
+    position: 1550 , 
+    label: 'AnimalOrigin'
+  } ]
+  @UI.lineItem: [ {
+    position: 1550 , 
+    label: 'AnimalOrigin'
+  } ]
+  @UI.selectionField: [ {
+    position: 1550 
+  } ]
+  AnimalOrigin;
+  
+  @EndUserText.label: 'TextileCompInd'
+  @UI.identification: [ {
+    position: 1560 , 
+    label: 'TextileCompInd'
+  } ]
+  @UI.lineItem: [ {
+    position: 1560 , 
+    label: 'TextileCompInd'
+  } ]
+  @UI.selectionField: [ {
+    position: 1560 
+  } ]
+  TextileCompInd;
+  
+  @EndUserText.label: 'LastChangedTime'
+  @UI.identification: [ {
+    position: 1570 , 
+    label: 'LastChangedTime'
+  } ]
+  @UI.lineItem: [ {
+    position: 1570 , 
+    label: 'LastChangedTime'
+  } ]
+  @UI.selectionField: [ {
+    position: 1570 
+  } ]
+  LastChangedTime;
+  
+  @EndUserText.label: 'MatnrExternal'
+  @UI.identification: [ {
+    position: 1580 , 
+    label: 'MatnrExternal'
+  } ]
+  @UI.lineItem: [ {
+    position: 1580 , 
+    label: 'MatnrExternal'
+  } ]
+  @UI.selectionField: [ {
+    position: 1580 
+  } ]
+  MatnrExternal;
+  
+  @EndUserText.label: 'ChmlCmplncRlvnceInd'
+  @UI.identification: [ {
+    position: 1590 , 
+    label: 'ChmlCmplncRlvnceInd'
+  } ]
+  @UI.lineItem: [ {
+    position: 1590 , 
+    label: 'ChmlCmplncRlvnceInd'
+  } ]
+  @UI.selectionField: [ {
+    position: 1590 
+  } ]
+  ChmlCmplncRlvnceInd;
+  
+  @EndUserText.label: 'LogisticalMatCategory'
+  @UI.identification: [ {
+    position: 1600 , 
+    label: 'LogisticalMatCategory'
+  } ]
+  @UI.lineItem: [ {
+    position: 1600 , 
+    label: 'LogisticalMatCategory'
+  } ]
+  @UI.selectionField: [ {
+    position: 1600 
+  } ]
+  LogisticalMatCategory;
+  
+  @EndUserText.label: 'SalesMaterial'
+  @UI.identification: [ {
+    position: 1610 , 
+    label: 'SalesMaterial'
+  } ]
+  @UI.lineItem: [ {
+    position: 1610 , 
+    label: 'SalesMaterial'
+  } ]
+  @UI.selectionField: [ {
+    position: 1610 
+  } ]
+  SalesMaterial;
+  
+  @EndUserText.label: 'IdentificationTagType'
+  @UI.identification: [ {
+    position: 1620 , 
+    label: 'IdentificationTagType'
+  } ]
+  @UI.lineItem: [ {
+    position: 1620 , 
+    label: 'IdentificationTagType'
+  } ]
+  @UI.selectionField: [ {
+    position: 1620 
+  } ]
+  IdentificationTagType;
+  
+  @EndUserText.label: 'Productoid'
+  @UI.identification: [ {
+    position: 1630 , 
+    label: 'Productoid'
+  } ]
+  @UI.lineItem: [ {
+    position: 1630 , 
+    label: 'Productoid'
+  } ]
+  @UI.selectionField: [ {
+    position: 1630 
+  } ]
+  Productoid;
+  
+  @EndUserText.label: 'SdmVersion'
+  @UI.identification: [ {
+    position: 1640 , 
+    label: 'SdmVersion'
+  } ]
+  @UI.lineItem: [ {
+    position: 1640 , 
+    label: 'SdmVersion'
+  } ]
+  @UI.selectionField: [ {
+    position: 1640 
+  } ]
+  SdmVersion;
+  
+  @EndUserText.label: 'SgtCsgr'
+  @UI.identification: [ {
+    position: 1650 , 
+    label: 'SgtCsgr'
+  } ]
+  @UI.lineItem: [ {
+    position: 1650 , 
+    label: 'SgtCsgr'
+  } ]
+  @UI.selectionField: [ {
+    position: 1650 
+  } ]
+  SgtCsgr;
+  
+  @EndUserText.label: 'SgtCovsa'
+  @UI.identification: [ {
+    position: 1660 , 
+    label: 'SgtCovsa'
+  } ]
+  @UI.lineItem: [ {
+    position: 1660 , 
+    label: 'SgtCovsa'
+  } ]
+  @UI.selectionField: [ {
+    position: 1660 
+  } ]
+  SgtCovsa;
+  
+  @EndUserText.label: 'SgtStat'
+  @UI.identification: [ {
+    position: 1670 , 
+    label: 'SgtStat'
+  } ]
+  @UI.lineItem: [ {
+    position: 1670 , 
+    label: 'SgtStat'
+  } ]
+  @UI.selectionField: [ {
+    position: 1670 
+  } ]
+  SgtStat;
+  
+  @EndUserText.label: 'SgtScope'
+  @UI.identification: [ {
+    position: 1680 , 
+    label: 'SgtScope'
+  } ]
+  @UI.lineItem: [ {
+    position: 1680 , 
+    label: 'SgtScope'
+  } ]
+  @UI.selectionField: [ {
+    position: 1680 
+  } ]
+  SgtScope;
+  
+  @EndUserText.label: 'SgtRel'
+  @UI.identification: [ {
+    position: 1690 , 
+    label: 'SgtRel'
+  } ]
+  @UI.lineItem: [ {
+    position: 1690 , 
+    label: 'SgtRel'
+  } ]
+  @UI.selectionField: [ {
+    position: 1690 
+  } ]
+  SgtRel;
+  
+  @EndUserText.label: 'Anp'
+  @UI.identification: [ {
+    position: 1700 , 
+    label: 'Anp'
+  } ]
+  @UI.lineItem: [ {
+    position: 1700 , 
+    label: 'Anp'
+  } ]
+  @UI.selectionField: [ {
+    position: 1700 
+  } ]
+  Anp;
+  
+  @EndUserText.label: 'PsmCode'
+  @UI.identification: [ {
+    position: 1710 , 
+    label: 'PsmCode'
+  } ]
+  @UI.lineItem: [ {
+    position: 1710 , 
+    label: 'PsmCode'
+  } ]
+  @UI.selectionField: [ {
+    position: 1710 
+  } ]
+  PsmCode;
+  
+  @EndUserText.label: 'FshMgAt1'
+  @UI.identification: [ {
+    position: 1720 , 
+    label: 'FshMgAt1'
+  } ]
+  @UI.lineItem: [ {
+    position: 1720 , 
+    label: 'FshMgAt1'
+  } ]
+  @UI.selectionField: [ {
+    position: 1720 
+  } ]
+  FshMgAt1;
+  
+  @EndUserText.label: 'FshMgAt2'
+  @UI.identification: [ {
+    position: 1730 , 
+    label: 'FshMgAt2'
+  } ]
+  @UI.lineItem: [ {
+    position: 1730 , 
+    label: 'FshMgAt2'
+  } ]
+  @UI.selectionField: [ {
+    position: 1730 
+  } ]
+  FshMgAt2;
+  
+  @EndUserText.label: 'FshMgAt3'
+  @UI.identification: [ {
+    position: 1740 , 
+    label: 'FshMgAt3'
+  } ]
+  @UI.lineItem: [ {
+    position: 1740 , 
+    label: 'FshMgAt3'
+  } ]
+  @UI.selectionField: [ {
+    position: 1740 
+  } ]
+  FshMgAt3;
+  
+  @EndUserText.label: 'FshSealv'
+  @UI.identification: [ {
+    position: 1750 , 
+    label: 'FshSealv'
+  } ]
+  @UI.lineItem: [ {
+    position: 1750 , 
+    label: 'FshSealv'
+  } ]
+  @UI.selectionField: [ {
+    position: 1750 
+  } ]
+  FshSealv;
+  
+  @EndUserText.label: 'FshSeaim'
+  @UI.identification: [ {
+    position: 1760 , 
+    label: 'FshSeaim'
+  } ]
+  @UI.lineItem: [ {
+    position: 1760 , 
+    label: 'FshSeaim'
+  } ]
+  @UI.selectionField: [ {
+    position: 1760 
+  } ]
+  FshSeaim;
+  
+  @EndUserText.label: 'FshScMid'
+  @UI.identification: [ {
+    position: 1770 , 
+    label: 'FshScMid'
+  } ]
+  @UI.lineItem: [ {
+    position: 1770 , 
+    label: 'FshScMid'
+  } ]
+  @UI.selectionField: [ {
+    position: 1770 
+  } ]
+  FshScMid;
+  
+  @EndUserText.label: 'DummyPrdInclEewPs'
+  @UI.identification: [ {
+    position: 1780 , 
+    label: 'DummyPrdInclEewPs'
+  } ]
+  @UI.lineItem: [ {
+    position: 1780 , 
+    label: 'DummyPrdInclEewPs'
+  } ]
+  @UI.selectionField: [ {
+    position: 1780 
+  } ]
+  DummyPrdInclEewPs;
+  
+  @EndUserText.label: 'ScmMatidGuid16'
+  @UI.identification: [ {
+    position: 1790 , 
+    label: 'ScmMatidGuid16'
+  } ]
+  @UI.lineItem: [ {
+    position: 1790 , 
+    label: 'ScmMatidGuid16'
+  } ]
+  @UI.selectionField: [ {
+    position: 1790 
+  } ]
+  ScmMatidGuid16;
+  
+  @EndUserText.label: 'ScmMatidGuid22'
+  @UI.identification: [ {
+    position: 1800 , 
+    label: 'ScmMatidGuid22'
+  } ]
+  @UI.lineItem: [ {
+    position: 1800 , 
+    label: 'ScmMatidGuid22'
+  } ]
+  @UI.selectionField: [ {
+    position: 1800 
+  } ]
+  ScmMatidGuid22;
+  
+  @EndUserText.label: 'ScmMaturityDur'
+  @UI.identification: [ {
+    position: 1810 , 
+    label: 'ScmMaturityDur'
+  } ]
+  @UI.lineItem: [ {
+    position: 1810 , 
+    label: 'ScmMaturityDur'
+  } ]
+  @UI.selectionField: [ {
+    position: 1810 
+  } ]
+  ScmMaturityDur;
+  
+  @EndUserText.label: 'ScmShlfLfeReqMin'
+  @UI.identification: [ {
+    position: 1820 , 
+    label: 'ScmShlfLfeReqMin'
+  } ]
+  @UI.lineItem: [ {
+    position: 1820 , 
+    label: 'ScmShlfLfeReqMin'
+  } ]
+  @UI.selectionField: [ {
+    position: 1820 
+  } ]
+  ScmShlfLfeReqMin;
+  
+  @EndUserText.label: 'ScmShlfLfeReqMax'
+  @UI.identification: [ {
+    position: 1830 , 
+    label: 'ScmShlfLfeReqMax'
+  } ]
+  @UI.lineItem: [ {
+    position: 1830 , 
+    label: 'ScmShlfLfeReqMax'
+  } ]
+  @UI.selectionField: [ {
+    position: 1830 
+  } ]
+  ScmShlfLfeReqMax;
+  
+  @EndUserText.label: 'ScmPuom'
+  @UI.identification: [ {
+    position: 1840 , 
+    label: 'ScmPuom'
+  } ]
+  @UI.lineItem: [ {
+    position: 1840 , 
+    label: 'ScmPuom'
+  } ]
+  @UI.selectionField: [ {
+    position: 1840 
+  } ]
+  ScmPuom;
+  
+  @EndUserText.label: 'RmatpPb'
+  @UI.identification: [ {
+    position: 1850 , 
+    label: 'RmatpPb'
+  } ]
+  @UI.lineItem: [ {
+    position: 1850 , 
+    label: 'RmatpPb'
+  } ]
+  @UI.selectionField: [ {
+    position: 1850 
+  } ]
+  RmatpPb;
+  
+  @EndUserText.label: 'ProdShape'
+  @UI.identification: [ {
+    position: 1860 , 
+    label: 'ProdShape'
+  } ]
+  @UI.lineItem: [ {
+    position: 1860 , 
+    label: 'ProdShape'
+  } ]
+  @UI.selectionField: [ {
+    position: 1860 
+  } ]
+  ProdShape;
+  
+  @EndUserText.label: 'MoProfileID'
+  @UI.identification: [ {
+    position: 1870 , 
+    label: 'MoProfileID'
+  } ]
+  @UI.lineItem: [ {
+    position: 1870 , 
+    label: 'MoProfileID'
+  } ]
+  @UI.selectionField: [ {
+    position: 1870 
+  } ]
+  MoProfileID;
+  
+  @EndUserText.label: 'OverhangTresh'
+  @UI.identification: [ {
+    position: 1880 , 
+    label: 'OverhangTresh'
+  } ]
+  @UI.lineItem: [ {
+    position: 1880 , 
+    label: 'OverhangTresh'
+  } ]
+  @UI.selectionField: [ {
+    position: 1880 
+  } ]
+  OverhangTresh;
+  
+  @EndUserText.label: 'BridgeTresh'
+  @UI.identification: [ {
+    position: 1890 , 
+    label: 'BridgeTresh'
+  } ]
+  @UI.lineItem: [ {
+    position: 1890 , 
+    label: 'BridgeTresh'
+  } ]
+  @UI.selectionField: [ {
+    position: 1890 
+  } ]
+  BridgeTresh;
+  
+  @EndUserText.label: 'BridgeMaxSlope'
+  @UI.identification: [ {
+    position: 1900 , 
+    label: 'BridgeMaxSlope'
+  } ]
+  @UI.lineItem: [ {
+    position: 1900 , 
+    label: 'BridgeMaxSlope'
+  } ]
+  @UI.selectionField: [ {
+    position: 1900 
+  } ]
+  BridgeMaxSlope;
+  
+  @EndUserText.label: 'HeightNonflat'
+  @UI.identification: [ {
+    position: 1910 , 
+    label: 'HeightNonflat'
+  } ]
+  @UI.lineItem: [ {
+    position: 1910 , 
+    label: 'HeightNonflat'
+  } ]
+  @UI.selectionField: [ {
+    position: 1910 
+  } ]
+  HeightNonflat;
+  
+  @EndUserText.label: 'ScmKitcomp'
+  @UI.identification: [ {
+    position: 1920 , 
+    label: 'ScmKitcomp'
+  } ]
+  @UI.lineItem: [ {
+    position: 1920 , 
+    label: 'ScmKitcomp'
+  } ]
+  @UI.selectionField: [ {
+    position: 1920 
+  } ]
+  ScmKitcomp;
+  
+  @EndUserText.label: 'ScmProdPaoopt'
+  @UI.identification: [ {
+    position: 1930 , 
+    label: 'ScmProdPaoopt'
+  } ]
+  @UI.lineItem: [ {
+    position: 1930 , 
+    label: 'ScmProdPaoopt'
+  } ]
+  @UI.selectionField: [ {
+    position: 1930 
+  } ]
+  ScmProdPaoopt;
+  
+  @EndUserText.label: 'ScmBodDeplvl'
+  @UI.identification: [ {
+    position: 1940 , 
+    label: 'ScmBodDeplvl'
+  } ]
+  @UI.lineItem: [ {
+    position: 1940 , 
+    label: 'ScmBodDeplvl'
+  } ]
+  @UI.selectionField: [ {
+    position: 1940 
+  } ]
+  ScmBodDeplvl;
+  
+  @EndUserText.label: 'ScmRestrictInvbal'
+  @UI.identification: [ {
+    position: 1950 , 
+    label: 'ScmRestrictInvbal'
+  } ]
+  @UI.lineItem: [ {
+    position: 1950 , 
+    label: 'ScmRestrictInvbal'
+  } ]
+  @UI.selectionField: [ {
+    position: 1950 
+  } ]
+  ScmRestrictInvbal;
+  
+  @EndUserText.label: 'ScmDrpGlStock'
+  @UI.identification: [ {
+    position: 1960 , 
+    label: 'ScmDrpGlStock'
+  } ]
+  @UI.lineItem: [ {
+    position: 1960 , 
+    label: 'ScmDrpGlStock'
+  } ]
+  @UI.selectionField: [ {
+    position: 1960 
+  } ]
+  ScmDrpGlStock;
+  
+  @EndUserText.label: 'ScmExclExpedite'
+  @UI.identification: [ {
+    position: 1970 , 
+    label: 'ScmExclExpedite'
+  } ]
+  @UI.lineItem: [ {
+    position: 1970 , 
+    label: 'ScmExclExpedite'
+  } ]
+  @UI.selectionField: [ {
+    position: 1970 
+  } ]
+  ScmExclExpedite;
+  
+  @EndUserText.label: 'NewprodIndi'
+  @UI.identification: [ {
+    position: 1980 , 
+    label: 'NewprodIndi'
+  } ]
+  @UI.lineItem: [ {
+    position: 1980 , 
+    label: 'NewprodIndi'
+  } ]
+  @UI.selectionField: [ {
+    position: 1980 
+  } ]
+  NewprodIndi;
+  
+  @EndUserText.label: 'PrdStartdt'
+  @UI.identification: [ {
+    position: 1990 , 
+    label: 'PrdStartdt'
+  } ]
+  @UI.lineItem: [ {
+    position: 1990 , 
+    label: 'PrdStartdt'
+  } ]
+  @UI.selectionField: [ {
+    position: 1990 
+  } ]
+  PrdStartdt;
+  
+  @EndUserText.label: 'PrdEnddt'
+  @UI.identification: [ {
+    position: 2000 , 
+    label: 'PrdEnddt'
+  } ]
+  @UI.lineItem: [ {
+    position: 2000 , 
+    label: 'PrdEnddt'
+  } ]
+  @UI.selectionField: [ {
+    position: 2000 
+  } ]
+  PrdEnddt;
+  
+  @EndUserText.label: 'InvPlnMode'
+  @UI.identification: [ {
+    position: 2010 , 
+    label: 'InvPlnMode'
+  } ]
+  @UI.lineItem: [ {
+    position: 2010 , 
+    label: 'InvPlnMode'
+  } ]
+  @UI.selectionField: [ {
+    position: 2010 
+  } ]
+  InvPlnMode;
+  
+  @EndUserText.label: 'Flagclass'
+  @UI.identification: [ {
+    position: 2020 , 
+    label: 'Flagclass'
+  } ]
+  @UI.lineItem: [ {
+    position: 2020 , 
+    label: 'Flagclass'
+  } ]
+  @UI.selectionField: [ {
+    position: 2020 
+  } ]
+  Flagclass;
+  
+  @EndUserText.label: '/cwm/xcwmat'
+  @UI.identification: [ {
+    position: 2030 , 
+    label: '/cwm/xcwmat'
+  } ]
+  @UI.lineItem: [ {
+    position: 2030 , 
+    label: '/cwm/xcwmat'
+  } ]
+  @UI.selectionField: [ {
+    position: 2030 
+  } ]
+  /cwm/xcwmat;
+  
+  @EndUserText.label: '/cwm/valum'
+  @UI.identification: [ {
+    position: 2040 , 
+    label: '/cwm/valum'
+  } ]
+  @UI.lineItem: [ {
+    position: 2040 , 
+    label: '/cwm/valum'
+  } ]
+  @UI.selectionField: [ {
+    position: 2040 
+  } ]
+  /cwm/valum;
+  
+  @EndUserText.label: '/cwm/tolgr'
+  @UI.identification: [ {
+    position: 2050 , 
+    label: '/cwm/tolgr'
+  } ]
+  @UI.lineItem: [ {
+    position: 2050 , 
+    label: '/cwm/tolgr'
+  } ]
+  @UI.selectionField: [ {
+    position: 2050 
+  } ]
+  /cwm/tolgr;
+  
+  @EndUserText.label: '/cwm/tara'
+  @UI.identification: [ {
+    position: 2060 , 
+    label: '/cwm/tara'
+  } ]
+  @UI.lineItem: [ {
+    position: 2060 , 
+    label: '/cwm/tara'
+  } ]
+  @UI.selectionField: [ {
+    position: 2060 
+  } ]
+  /cwm/tara;
+  
+  @EndUserText.label: '/cwm/tarum'
+  @UI.identification: [ {
+    position: 2070 , 
+    label: '/cwm/tarum'
+  } ]
+  @UI.lineItem: [ {
+    position: 2070 , 
+    label: '/cwm/tarum'
+  } ]
+  @UI.selectionField: [ {
+    position: 2070 
+  } ]
+  /cwm/tarum;
+  
+  @EndUserText.label: '/bev1/luleinh'
+  @UI.identification: [ {
+    position: 2080 , 
+    label: '/bev1/luleinh'
+  } ]
+  @UI.lineItem: [ {
+    position: 2080 , 
+    label: '/bev1/luleinh'
+  } ]
+  @UI.selectionField: [ {
+    position: 2080 
+  } ]
+  /bev1/luleinh;
+  
+  @EndUserText.label: '/bev1/luldegrp'
+  @UI.identification: [ {
+    position: 2090 , 
+    label: '/bev1/luldegrp'
+  } ]
+  @UI.lineItem: [ {
+    position: 2090 , 
+    label: '/bev1/luldegrp'
+  } ]
+  @UI.selectionField: [ {
+    position: 2090 
+  } ]
+  /bev1/luldegrp;
+  
+  @EndUserText.label: '/bev1/nestruccat'
+  @UI.identification: [ {
+    position: 2100 , 
+    label: '/bev1/nestruccat'
+  } ]
+  @UI.lineItem: [ {
+    position: 2100 , 
+    label: '/bev1/nestruccat'
+  } ]
+  @UI.selectionField: [ {
+    position: 2100 
+  } ]
+  /bev1/nestruccat;
+  
+  @EndUserText.label: '/dsd/slToltyp'
+  @UI.identification: [ {
+    position: 2110 , 
+    label: '/dsd/slToltyp'
+  } ]
+  @UI.lineItem: [ {
+    position: 2110 , 
+    label: '/dsd/slToltyp'
+  } ]
+  @UI.selectionField: [ {
+    position: 2110 
+  } ]
+  /dsd/slToltyp;
+  
+  @EndUserText.label: '/dsd/svCntGrp'
+  @UI.identification: [ {
+    position: 2120 , 
+    label: '/dsd/svCntGrp'
+  } ]
+  @UI.lineItem: [ {
+    position: 2120 , 
+    label: '/dsd/svCntGrp'
+  } ]
+  @UI.selectionField: [ {
+    position: 2120 
+  } ]
+  /dsd/svCntGrp;
+  
+  @EndUserText.label: '/dsd/vcGroup'
+  @UI.identification: [ {
+    position: 2130 , 
+    label: '/dsd/vcGroup'
+  } ]
+  @UI.lineItem: [ {
+    position: 2130 , 
+    label: '/dsd/vcGroup'
+  } ]
+  @UI.selectionField: [ {
+    position: 2130 
+  } ]
+  /dsd/vcGroup;
+  
+  @EndUserText.label: '/sapmp/kadu'
+  @UI.identification: [ {
+    position: 2140 , 
+    label: '/sapmp/kadu'
+  } ]
+  @UI.lineItem: [ {
+    position: 2140 , 
+    label: '/sapmp/kadu'
+  } ]
+  @UI.selectionField: [ {
+    position: 2140 
+  } ]
+  /sapmp/kadu;
+  
+  @EndUserText.label: '/sapmp/abmein'
+  @UI.identification: [ {
+    position: 2150 , 
+    label: '/sapmp/abmein'
+  } ]
+  @UI.lineItem: [ {
+    position: 2150 , 
+    label: '/sapmp/abmein'
+  } ]
+  @UI.selectionField: [ {
+    position: 2150 
+  } ]
+  /sapmp/abmein;
+  
+  @EndUserText.label: '/sapmp/kadp'
+  @UI.identification: [ {
+    position: 2160 , 
+    label: '/sapmp/kadp'
+  } ]
+  @UI.lineItem: [ {
+    position: 2160 , 
+    label: '/sapmp/kadp'
+  } ]
+  @UI.selectionField: [ {
+    position: 2160 
+  } ]
+  /sapmp/kadp;
+  
+  @EndUserText.label: '/sapmp/brad'
+  @UI.identification: [ {
+    position: 2170 , 
+    label: '/sapmp/brad'
+  } ]
+  @UI.lineItem: [ {
+    position: 2170 , 
+    label: '/sapmp/brad'
+  } ]
+  @UI.selectionField: [ {
+    position: 2170 
+  } ]
+  /sapmp/brad;
+  
+  @EndUserText.label: '/sapmp/spbi'
+  @UI.identification: [ {
+    position: 2180 , 
+    label: '/sapmp/spbi'
+  } ]
+  @UI.lineItem: [ {
+    position: 2180 , 
+    label: '/sapmp/spbi'
+  } ]
+  @UI.selectionField: [ {
+    position: 2180 
+  } ]
+  /sapmp/spbi;
+  
+  @EndUserText.label: '/sapmp/trad'
+  @UI.identification: [ {
+    position: 2190 , 
+    label: '/sapmp/trad'
+  } ]
+  @UI.lineItem: [ {
+    position: 2190 , 
+    label: '/sapmp/trad'
+  } ]
+  @UI.selectionField: [ {
+    position: 2190 
+  } ]
+  /sapmp/trad;
+  
+  @EndUserText.label: '/sapmp/kedu'
+  @UI.identification: [ {
+    position: 2200 , 
+    label: '/sapmp/kedu'
+  } ]
+  @UI.lineItem: [ {
+    position: 2200 , 
+    label: '/sapmp/kedu'
+  } ]
+  @UI.selectionField: [ {
+    position: 2200 
+  } ]
+  /sapmp/kedu;
+  
+  @EndUserText.label: '/sapmp/sptr'
+  @UI.identification: [ {
+    position: 2210 , 
+    label: '/sapmp/sptr'
+  } ]
+  @UI.lineItem: [ {
+    position: 2210 , 
+    label: '/sapmp/sptr'
+  } ]
+  @UI.selectionField: [ {
+    position: 2210 
+  } ]
+  /sapmp/sptr;
+  
+  @EndUserText.label: '/sapmp/fbdk'
+  @UI.identification: [ {
+    position: 2220 , 
+    label: '/sapmp/fbdk'
+  } ]
+  @UI.lineItem: [ {
+    position: 2220 , 
+    label: '/sapmp/fbdk'
+  } ]
+  @UI.selectionField: [ {
+    position: 2220 
+  } ]
+  /sapmp/fbdk;
+  
+  @EndUserText.label: '/sapmp/fbhk'
+  @UI.identification: [ {
+    position: 2230 , 
+    label: '/sapmp/fbhk'
+  } ]
+  @UI.lineItem: [ {
+    position: 2230 , 
+    label: '/sapmp/fbhk'
+  } ]
+  @UI.selectionField: [ {
+    position: 2230 
+  } ]
+  /sapmp/fbhk;
+  
+  @EndUserText.label: '/sapmp/rili'
+  @UI.identification: [ {
+    position: 2240 , 
+    label: '/sapmp/rili'
+  } ]
+  @UI.lineItem: [ {
+    position: 2240 , 
+    label: '/sapmp/rili'
+  } ]
+  @UI.selectionField: [ {
+    position: 2240 
+  } ]
+  /sapmp/rili;
+  
+  @EndUserText.label: '/sapmp/fbak'
+  @UI.identification: [ {
+    position: 2250 , 
+    label: '/sapmp/fbak'
+  } ]
+  @UI.lineItem: [ {
+    position: 2250 , 
+    label: '/sapmp/fbak'
+  } ]
+  @UI.selectionField: [ {
+    position: 2250 
+  } ]
+  /sapmp/fbak;
+  
+  @EndUserText.label: '/sapmp/aho'
+  @UI.identification: [ {
+    position: 2260 , 
+    label: '/sapmp/aho'
+  } ]
+  @UI.lineItem: [ {
+    position: 2260 , 
+    label: '/sapmp/aho'
+  } ]
+  @UI.selectionField: [ {
+    position: 2260 
+  } ]
+  /sapmp/aho;
+  
+  @EndUserText.label: '/sapmp/mifrr'
+  @UI.identification: [ {
+    position: 2270 , 
+    label: '/sapmp/mifrr'
+  } ]
+  @UI.lineItem: [ {
+    position: 2270 , 
+    label: '/sapmp/mifrr'
+  } ]
+  @UI.selectionField: [ {
+    position: 2270 
+  } ]
+  /sapmp/mifrr;
+  
+  @EndUserText.label: '/vso/rTiltInd'
+  @UI.identification: [ {
+    position: 2280 , 
+    label: '/vso/rTiltInd'
+  } ]
+  @UI.lineItem: [ {
+    position: 2280 , 
+    label: '/vso/rTiltInd'
+  } ]
+  @UI.selectionField: [ {
+    position: 2280 
+  } ]
+  /vso/rTiltInd;
+  
+  @EndUserText.label: '/vso/rStackInd'
+  @UI.identification: [ {
+    position: 2290 , 
+    label: '/vso/rStackInd'
+  } ]
+  @UI.lineItem: [ {
+    position: 2290 , 
+    label: '/vso/rStackInd'
+  } ]
+  @UI.selectionField: [ {
+    position: 2290 
+  } ]
+  /vso/rStackInd;
+  
+  @EndUserText.label: '/vso/rBotInd'
+  @UI.identification: [ {
+    position: 2300 , 
+    label: '/vso/rBotInd'
+  } ]
+  @UI.lineItem: [ {
+    position: 2300 , 
+    label: '/vso/rBotInd'
+  } ]
+  @UI.selectionField: [ {
+    position: 2300 
+  } ]
+  /vso/rBotInd;
+  
+  @EndUserText.label: '/vso/rTopInd'
+  @UI.identification: [ {
+    position: 2310 , 
+    label: '/vso/rTopInd'
+  } ]
+  @UI.lineItem: [ {
+    position: 2310 , 
+    label: '/vso/rTopInd'
+  } ]
+  @UI.selectionField: [ {
+    position: 2310 
+  } ]
+  /vso/rTopInd;
+  
+  @EndUserText.label: '/vso/rStackNo'
+  @UI.identification: [ {
+    position: 2320 , 
+    label: '/vso/rStackNo'
+  } ]
+  @UI.lineItem: [ {
+    position: 2320 , 
+    label: '/vso/rStackNo'
+  } ]
+  @UI.selectionField: [ {
+    position: 2320 
+  } ]
+  /vso/rStackNo;
+  
+  @EndUserText.label: '/vso/rPalInd'
+  @UI.identification: [ {
+    position: 2330 , 
+    label: '/vso/rPalInd'
+  } ]
+  @UI.lineItem: [ {
+    position: 2330 , 
+    label: '/vso/rPalInd'
+  } ]
+  @UI.selectionField: [ {
+    position: 2330 
+  } ]
+  /vso/rPalInd;
+  
+  @EndUserText.label: '/vso/rPalOvrD'
+  @UI.identification: [ {
+    position: 2340 , 
+    label: '/vso/rPalOvrD'
+  } ]
+  @UI.lineItem: [ {
+    position: 2340 , 
+    label: '/vso/rPalOvrD'
+  } ]
+  @UI.selectionField: [ {
+    position: 2340 
+  } ]
+  /vso/rPalOvrD;
+  
+  @EndUserText.label: '/vso/rPalOvrW'
+  @UI.identification: [ {
+    position: 2350 , 
+    label: '/vso/rPalOvrW'
+  } ]
+  @UI.lineItem: [ {
+    position: 2350 , 
+    label: '/vso/rPalOvrW'
+  } ]
+  @UI.selectionField: [ {
+    position: 2350 
+  } ]
+  /vso/rPalOvrW;
+  
+  @EndUserText.label: '/vso/rPalBHt'
+  @UI.identification: [ {
+    position: 2360 , 
+    label: '/vso/rPalBHt'
+  } ]
+  @UI.lineItem: [ {
+    position: 2360 , 
+    label: '/vso/rPalBHt'
+  } ]
+  @UI.selectionField: [ {
+    position: 2360 
+  } ]
+  /vso/rPalBHt;
+  
+  @EndUserText.label: '/vso/rPalMinH'
+  @UI.identification: [ {
+    position: 2370 , 
+    label: '/vso/rPalMinH'
+  } ]
+  @UI.lineItem: [ {
+    position: 2370 , 
+    label: '/vso/rPalMinH'
+  } ]
+  @UI.selectionField: [ {
+    position: 2370 
+  } ]
+  /vso/rPalMinH;
+  
+  @EndUserText.label: '/vso/rTolBHt'
+  @UI.identification: [ {
+    position: 2380 , 
+    label: '/vso/rTolBHt'
+  } ]
+  @UI.lineItem: [ {
+    position: 2380 , 
+    label: '/vso/rTolBHt'
+  } ]
+  @UI.selectionField: [ {
+    position: 2380 
+  } ]
+  /vso/rTolBHt;
+  
+  @EndUserText.label: '/vso/rNoPGvh'
+  @UI.identification: [ {
+    position: 2390 , 
+    label: '/vso/rNoPGvh'
+  } ]
+  @UI.lineItem: [ {
+    position: 2390 , 
+    label: '/vso/rNoPGvh'
+  } ]
+  @UI.selectionField: [ {
+    position: 2390 
+  } ]
+  /vso/rNoPGvh;
+  
+  @EndUserText.label: '/vso/rQuanUnit'
+  @UI.identification: [ {
+    position: 2400 , 
+    label: '/vso/rQuanUnit'
+  } ]
+  @UI.lineItem: [ {
+    position: 2400 , 
+    label: '/vso/rQuanUnit'
+  } ]
+  @UI.selectionField: [ {
+    position: 2400 
+  } ]
+  /vso/rQuanUnit;
+  
+  @EndUserText.label: '/vso/rKzgvhInd'
+  @UI.identification: [ {
+    position: 2410 , 
+    label: '/vso/rKzgvhInd'
+  } ]
+  @UI.lineItem: [ {
+    position: 2410 , 
+    label: '/vso/rKzgvhInd'
+  } ]
+  @UI.selectionField: [ {
+    position: 2410 
+  } ]
+  /vso/rKzgvhInd;
+  
+  @EndUserText.label: 'Packcode'
+  @UI.identification: [ {
+    position: 2420 , 
+    label: 'Packcode'
+  } ]
+  @UI.lineItem: [ {
+    position: 2420 , 
+    label: 'Packcode'
+  } ]
+  @UI.selectionField: [ {
+    position: 2420 
+  } ]
+  Packcode;
+  
+  @EndUserText.label: 'DgPackStatus'
+  @UI.identification: [ {
+    position: 2430 , 
+    label: 'DgPackStatus'
+  } ]
+  @UI.lineItem: [ {
+    position: 2430 , 
+    label: 'DgPackStatus'
+  } ]
+  @UI.selectionField: [ {
+    position: 2430 
+  } ]
+  DgPackStatus;
+  
+  @EndUserText.label: 'SrvDura'
+  @UI.identification: [ {
+    position: 2440 , 
+    label: 'SrvDura'
+  } ]
+  @UI.lineItem: [ {
+    position: 2440 , 
+    label: 'SrvDura'
+  } ]
+  @UI.selectionField: [ {
+    position: 2440 
+  } ]
+  SrvDura;
+  
+  @EndUserText.label: 'SrvSerwi'
+  @UI.identification: [ {
+    position: 2450 , 
+    label: 'SrvSerwi'
+  } ]
+  @UI.lineItem: [ {
+    position: 2450 , 
+    label: 'SrvSerwi'
+  } ]
+  @UI.selectionField: [ {
+    position: 2450 
+  } ]
+  SrvSerwi;
+  
+  @EndUserText.label: 'SrvEscal'
+  @UI.identification: [ {
+    position: 2460 , 
+    label: 'SrvEscal'
+  } ]
+  @UI.lineItem: [ {
+    position: 2460 , 
+    label: 'SrvEscal'
+  } ]
+  @UI.selectionField: [ {
+    position: 2460 
+  } ]
+  SrvEscal;
+  
+  @EndUserText.label: 'SomCycle'
+  @UI.identification: [ {
+    position: 2470 , 
+    label: 'SomCycle'
+  } ]
+  @UI.lineItem: [ {
+    position: 2470 , 
+    label: 'SomCycle'
+  } ]
+  @UI.selectionField: [ {
+    position: 2470 
+  } ]
+  SomCycle;
+  
+  @EndUserText.label: 'SomCycleRule'
+  @UI.identification: [ {
+    position: 2480 , 
+    label: 'SomCycleRule'
+  } ]
+  @UI.lineItem: [ {
+    position: 2480 , 
+    label: 'SomCycleRule'
+  } ]
+  @UI.selectionField: [ {
+    position: 2480 
+  } ]
+  SomCycleRule;
+  
+  @EndUserText.label: 'SomTcSchema'
+  @UI.identification: [ {
+    position: 2490 , 
+    label: 'SomTcSchema'
+  } ]
+  @UI.lineItem: [ {
+    position: 2490 , 
+    label: 'SomTcSchema'
+  } ]
+  @UI.selectionField: [ {
+    position: 2490 
+  } ]
+  SomTcSchema;
+  
+  @EndUserText.label: 'SomCtrAutorenewal'
+  @UI.identification: [ {
+    position: 2500 , 
+    label: 'SomCtrAutorenewal'
+  } ]
+  @UI.lineItem: [ {
+    position: 2500 , 
+    label: 'SomCtrAutorenewal'
+  } ]
+  @UI.selectionField: [ {
+    position: 2500 
+  } ]
+  SomCtrAutorenewal;
+  
+  @EndUserText.label: 'Mcond'
+  @UI.identification: [ {
+    position: 2510 , 
+    label: 'Mcond'
+  } ]
+  @UI.lineItem: [ {
+    position: 2510 , 
+    label: 'Mcond'
+  } ]
+  @UI.selectionField: [ {
+    position: 2510 
+  } ]
+  Mcond;
+  
+  @EndUserText.label: 'Retdelc'
+  @UI.identification: [ {
+    position: 2520 , 
+    label: 'Retdelc'
+  } ]
+  @UI.lineItem: [ {
+    position: 2520 , 
+    label: 'Retdelc'
+  } ]
+  @UI.selectionField: [ {
+    position: 2520 
+  } ]
+  Retdelc;
+  
+  @EndUserText.label: 'LoglevReto'
+  @UI.identification: [ {
+    position: 2530 , 
+    label: 'LoglevReto'
+  } ]
+  @UI.lineItem: [ {
+    position: 2530 , 
+    label: 'LoglevReto'
+  } ]
+  @UI.selectionField: [ {
+    position: 2530 
+  } ]
+  LoglevReto;
+  
+  @EndUserText.label: 'Nsnid'
+  @UI.identification: [ {
+    position: 2540 , 
+    label: 'Nsnid'
+  } ]
+  @UI.lineItem: [ {
+    position: 2540 , 
+    label: 'Nsnid'
+  } ]
+  @UI.selectionField: [ {
+    position: 2540 
+  } ]
+  Nsnid;
+  
+  @EndUserText.label: 'Ovlpn'
+  @UI.identification: [ {
+    position: 2550 , 
+    label: 'Ovlpn'
+  } ]
+  @UI.lineItem: [ {
+    position: 2550 , 
+    label: 'Ovlpn'
+  } ]
+  @UI.selectionField: [ {
+    position: 2550 
+  } ]
+  Ovlpn;
+  
+  @EndUserText.label: 'AdspcSpc'
+  @UI.identification: [ {
+    position: 2560 , 
+    label: 'AdspcSpc'
+  } ]
+  @UI.lineItem: [ {
+    position: 2560 , 
+    label: 'AdspcSpc'
+  } ]
+  @UI.selectionField: [ {
+    position: 2560 
+  } ]
+  AdspcSpc;
+  
+  @EndUserText.label: 'Varid'
+  @UI.identification: [ {
+    position: 2570 , 
+    label: 'Varid'
+  } ]
+  @UI.lineItem: [ {
+    position: 2570 , 
+    label: 'Varid'
+  } ]
+  @UI.selectionField: [ {
+    position: 2570 
+  } ]
+  Varid;
+  
+  @EndUserText.label: 'Msbookpartno'
+  @UI.identification: [ {
+    position: 2580 , 
+    label: 'Msbookpartno'
+  } ]
+  @UI.lineItem: [ {
+    position: 2580 , 
+    label: 'Msbookpartno'
+  } ]
+  @UI.selectionField: [ {
+    position: 2580 
+  } ]
+  Msbookpartno;
+  
+  @EndUserText.label: 'Dpcbt'
+  @UI.identification: [ {
+    position: 2590 , 
+    label: 'Dpcbt'
+  } ]
+  @UI.lineItem: [ {
+    position: 2590 , 
+    label: 'Dpcbt'
+  } ]
+  @UI.selectionField: [ {
+    position: 2590 
+  } ]
+  Dpcbt;
+  
+  @EndUserText.label: 'Xgrdt'
+  @UI.identification: [ {
+    position: 2600 , 
+    label: 'Xgrdt'
+  } ]
+  @UI.lineItem: [ {
+    position: 2600 , 
+    label: 'Xgrdt'
+  } ]
+  @UI.selectionField: [ {
+    position: 2600 
+  } ]
+  Xgrdt;
+  
+  @EndUserText.label: 'Imatn'
+  @UI.identification: [ {
+    position: 2610 , 
+    label: 'Imatn'
+  } ]
+  @UI.lineItem: [ {
+    position: 2610 , 
+    label: 'Imatn'
+  } ]
+  @UI.selectionField: [ {
+    position: 2610 
+  } ]
+  Imatn;
+  
+  @EndUserText.label: 'Picnum'
+  @UI.identification: [ {
+    position: 2620 , 
+    label: 'Picnum'
+  } ]
+  @UI.lineItem: [ {
+    position: 2620 , 
+    label: 'Picnum'
+  } ]
+  @UI.selectionField: [ {
+    position: 2620 
+  } ]
+  Picnum;
+  
+  @EndUserText.label: 'Bstat'
+  @UI.identification: [ {
+    position: 2630 , 
+    label: 'Bstat'
+  } ]
+  @UI.lineItem: [ {
+    position: 2630 , 
+    label: 'Bstat'
+  } ]
+  @UI.selectionField: [ {
+    position: 2630 
+  } ]
+  Bstat;
+  
+  @EndUserText.label: 'ColorAtinn'
+  @UI.identification: [ {
+    position: 2640 , 
+    label: 'ColorAtinn'
+  } ]
+  @UI.lineItem: [ {
+    position: 2640 , 
+    label: 'ColorAtinn'
+  } ]
+  @UI.selectionField: [ {
+    position: 2640 
+  } ]
+  ColorAtinn;
+  
+  @EndUserText.label: 'Size1Atinn'
+  @UI.identification: [ {
+    position: 2650 , 
+    label: 'Size1Atinn'
+  } ]
+  @UI.lineItem: [ {
+    position: 2650 , 
+    label: 'Size1Atinn'
+  } ]
+  @UI.selectionField: [ {
+    position: 2650 
+  } ]
+  Size1Atinn;
+  
+  @EndUserText.label: 'Size2Atinn'
+  @UI.identification: [ {
+    position: 2660 , 
+    label: 'Size2Atinn'
+  } ]
+  @UI.lineItem: [ {
+    position: 2660 , 
+    label: 'Size2Atinn'
+  } ]
+  @UI.selectionField: [ {
+    position: 2660 
+  } ]
+  Size2Atinn;
+  
+  @EndUserText.label: 'Color'
+  @UI.identification: [ {
+    position: 2670 , 
+    label: 'Color'
+  } ]
+  @UI.lineItem: [ {
+    position: 2670 , 
+    label: 'Color'
+  } ]
+  @UI.selectionField: [ {
+    position: 2670 
+  } ]
+  Color;
+  
+  @EndUserText.label: 'Size1'
+  @UI.identification: [ {
+    position: 2680 , 
+    label: 'Size1'
+  } ]
+  @UI.lineItem: [ {
+    position: 2680 , 
+    label: 'Size1'
+  } ]
+  @UI.selectionField: [ {
+    position: 2680 
+  } ]
+  Size1;
+  
+  @EndUserText.label: 'Size2'
+  @UI.identification: [ {
+    position: 2690 , 
+    label: 'Size2'
+  } ]
+  @UI.lineItem: [ {
+    position: 2690 , 
+    label: 'Size2'
+  } ]
+  @UI.selectionField: [ {
+    position: 2690 
+  } ]
+  Size2;
+  
+  @EndUserText.label: 'FreeChar'
+  @UI.identification: [ {
+    position: 2700 , 
+    label: 'FreeChar'
+  } ]
+  @UI.lineItem: [ {
+    position: 2700 , 
+    label: 'FreeChar'
+  } ]
+  @UI.selectionField: [ {
+    position: 2700 
+  } ]
+  FreeChar;
+  
+  @EndUserText.label: 'CareCode'
+  @UI.identification: [ {
+    position: 2710 , 
+    label: 'CareCode'
+  } ]
+  @UI.lineItem: [ {
+    position: 2710 , 
+    label: 'CareCode'
+  } ]
+  @UI.selectionField: [ {
+    position: 2710 
+  } ]
+  CareCode;
+  
+  @EndUserText.label: 'BrandID'
+  @UI.identification: [ {
+    position: 2720 , 
+    label: 'BrandID'
+  } ]
+  @UI.lineItem: [ {
+    position: 2720 , 
+    label: 'BrandID'
+  } ]
+  @UI.selectionField: [ {
+    position: 2720 
+  } ]
+  BrandID;
+  
+  @EndUserText.label: 'FiberCode1'
+  @UI.identification: [ {
+    position: 2730 , 
+    label: 'FiberCode1'
+  } ]
+  @UI.lineItem: [ {
+    position: 2730 , 
+    label: 'FiberCode1'
+  } ]
+  @UI.selectionField: [ {
+    position: 2730 
+  } ]
+  FiberCode1;
+  
+  @EndUserText.label: 'FiberPart1'
+  @UI.identification: [ {
+    position: 2740 , 
+    label: 'FiberPart1'
+  } ]
+  @UI.lineItem: [ {
+    position: 2740 , 
+    label: 'FiberPart1'
+  } ]
+  @UI.selectionField: [ {
+    position: 2740 
+  } ]
+  FiberPart1;
+  
+  @EndUserText.label: 'FiberCode2'
+  @UI.identification: [ {
+    position: 2750 , 
+    label: 'FiberCode2'
+  } ]
+  @UI.lineItem: [ {
+    position: 2750 , 
+    label: 'FiberCode2'
+  } ]
+  @UI.selectionField: [ {
+    position: 2750 
+  } ]
+  FiberCode2;
+  
+  @EndUserText.label: 'FiberPart2'
+  @UI.identification: [ {
+    position: 2760 , 
+    label: 'FiberPart2'
+  } ]
+  @UI.lineItem: [ {
+    position: 2760 , 
+    label: 'FiberPart2'
+  } ]
+  @UI.selectionField: [ {
+    position: 2760 
+  } ]
+  FiberPart2;
+  
+  @EndUserText.label: 'FiberCode3'
+  @UI.identification: [ {
+    position: 2770 , 
+    label: 'FiberCode3'
+  } ]
+  @UI.lineItem: [ {
+    position: 2770 , 
+    label: 'FiberCode3'
+  } ]
+  @UI.selectionField: [ {
+    position: 2770 
+  } ]
+  FiberCode3;
+  
+  @EndUserText.label: 'FiberPart3'
+  @UI.identification: [ {
+    position: 2780 , 
+    label: 'FiberPart3'
+  } ]
+  @UI.lineItem: [ {
+    position: 2780 , 
+    label: 'FiberPart3'
+  } ]
+  @UI.selectionField: [ {
+    position: 2780 
+  } ]
+  FiberPart3;
+  
+  @EndUserText.label: 'FiberCode4'
+  @UI.identification: [ {
+    position: 2790 , 
+    label: 'FiberCode4'
+  } ]
+  @UI.lineItem: [ {
+    position: 2790 , 
+    label: 'FiberCode4'
+  } ]
+  @UI.selectionField: [ {
+    position: 2790 
+  } ]
+  FiberCode4;
+  
+  @EndUserText.label: 'FiberPart4'
+  @UI.identification: [ {
+    position: 2800 , 
+    label: 'FiberPart4'
+  } ]
+  @UI.lineItem: [ {
+    position: 2800 , 
+    label: 'FiberPart4'
+  } ]
+  @UI.selectionField: [ {
+    position: 2800 
+  } ]
+  FiberPart4;
+  
+  @EndUserText.label: 'FiberCode5'
+  @UI.identification: [ {
+    position: 2810 , 
+    label: 'FiberCode5'
+  } ]
+  @UI.lineItem: [ {
+    position: 2810 , 
+    label: 'FiberCode5'
+  } ]
+  @UI.selectionField: [ {
+    position: 2810 
+  } ]
+  FiberCode5;
+  
+  @EndUserText.label: 'FiberPart5'
+  @UI.identification: [ {
+    position: 2820 , 
+    label: 'FiberPart5'
+  } ]
+  @UI.lineItem: [ {
+    position: 2820 , 
+    label: 'FiberPart5'
+  } ]
+  @UI.selectionField: [ {
+    position: 2820 
+  } ]
+  FiberPart5;
+  
+  @EndUserText.label: 'Fashgrd'
+  @UI.identification: [ {
+    position: 2830 , 
+    label: 'Fashgrd'
+  } ]
+  @UI.lineItem: [ {
+    position: 2830 , 
+    label: 'Fashgrd'
+  } ]
+  @UI.selectionField: [ {
+    position: 2830 
+  } ]
+  Fashgrd;
+  
+  @UI.identification: [ {
+    position: 2840 
+  } ]
+  @UI.lineItem: [ {
+    position: 2840 
+  } ]
+  @UI.selectionField: [ {
+    position: 2840 
+  } ]
+  CreatedBy;
+  
+  @EndUserText.label: 'CreatedAt'
+  @UI.identification: [ {
+    position: 2850 , 
+    label: 'CreatedAt'
+  } ]
+  @UI.lineItem: [ {
+    position: 2850 , 
+    label: 'CreatedAt'
+  } ]
+  @UI.selectionField: [ {
+    position: 2850 
+  } ]
+  CreatedAt;
+  
+  @UI.identification: [ {
+    position: 2860 
+  } ]
+  @UI.lineItem: [ {
+    position: 2860 
+  } ]
+  @UI.selectionField: [ {
+    position: 2860 
+  } ]
+  LastChangedBy;
+  
+  @UI.identification: [ {
+    position: 2870 
+  } ]
+  @UI.lineItem: [ {
+    position: 2870 
+  } ]
+  @UI.selectionField: [ {
+    position: 2870 
+  } ]
+  LastChangedAt;
+  
+  @UI.identification: [ {
+    position: 2880 
+  } ]
+  @UI.lineItem: [ {
+    position: 2880 
+  } ]
+  @UI.selectionField: [ {
+    position: 2880 
+  } ]
+  LocalLastChangedAt;
+  
+  @EndUserText.label: '_BaseEntity'
+  @UI.identification: [ {
+    position: 2890 , 
+    label: '_BaseEntity'
+  } ]
+  @UI.lineItem: [ {
+    position: 2890 , 
+    label: '_BaseEntity'
+  } ]
+  @UI.selectionField: [ {
+    position: 2890 
+  } ]
+  _BaseEntity;
+}
