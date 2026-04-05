@@ -13,7 +13,7 @@ ENDCLASS.
 
 CLASS zcl_data_loader IMPLEMENTATION.
   METHOD if_oo_adt_classrun~main.
-DATA: lt_yekko TYPE TABLE OF yekko,
+    DATA: lt_yekko TYPE TABLE OF yekko,
           lt_yekpo TYPE TABLE OF yekpo,
           lv_ebeln TYPE ebeln.
 

@@ -1,0 +1,19 @@
+projection;
+strict ( 2 );
+
+define behavior for ZC_DeliveryHeader alias DelHead
+{
+  use create;
+  use update;
+  use delete;
+
+  use association _item { create; }
+}
+
+define behavior for ZC_DeliveryLine alias DelLine
+{
+  use update;
+  use delete;
+
+  use association _header;
+}

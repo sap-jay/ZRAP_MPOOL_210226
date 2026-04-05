@@ -1,0 +1,5 @@
+@EndUserText.label: 'Manage Delivery'
+define service ZSD_ManageDelivery {
+  expose ZC_DeliveryHeader as DelHead;
+  expose ZC_DeliveryLine   as DelLine;
+}

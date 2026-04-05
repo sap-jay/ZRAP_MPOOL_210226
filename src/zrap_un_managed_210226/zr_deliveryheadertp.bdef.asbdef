@@ -1,0 +1,33 @@
+unmanaged implementation in class zbp_r_deliveryheadertp unique;
+strict ( 2 );
+
+define behavior for ZR_DeliveryHeaderTp alias DelHead
+//late numbering
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create ( authorization : global );
+  update;
+  delete;
+  field ( readonly : update ) Vbeln;
+  association _item { create; }
+
+  mapping for ylikp
+    {
+      Vbeln   = vbeln;
+    }
+}
+
+define behavior for ZI_DeliveryItem alias DelLine
+//late numbering
+lock dependent by _header
+authorization dependent by _header
+//etag master <field_name>
+{
+  update;
+  delete;
+  field ( readonly ) Vbeln;
+  field ( readonly : update ) Posnr;
+  association _header;
+}

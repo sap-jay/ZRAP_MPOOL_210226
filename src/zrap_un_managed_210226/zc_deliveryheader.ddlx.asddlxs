@@ -1,0 +1,55 @@
+@Metadata.layer: #CORE
+@UI.headerInfo: {
+    typeName: 'Delivery',
+    typeNamePlural: 'Deliveries',
+    title: { type: #STANDARD, value: 'Vbeln' },
+    description: { type: #STANDARD, value: 'Vkorg' }
+}
+
+annotate entity ZC_DeliveryHeader with
+{
+  @UI.facet: [
+        { id: 'GeneralInfo', label: 'Delivery Details', type: #IDENTIFICATION_REFERENCE, position: 10 },
+        { id: 'Dates', label: 'Shipping Schedule', type: #FIELDGROUP_REFERENCE, targetQualifier: 'Dates', position: 20 },
+        { id: 'Weights', label: 'Weight & Volume', type: #FIELDGROUP_REFERENCE, targetQualifier: 'Logistics', position: 30 }
+  ]
+
+  @UI.lineItem: [{ position: 10, importance: #HIGH, label: 'Delivery Number' }]
+  @UI.selectionField: [{ position: 10 }]
+  @UI.identification: [{ position: 10 }]
+  Vbeln;
+
+  @UI.lineItem: [{ position: 20, importance: #HIGH, label: 'Sales Org' }]
+  @UI.selectionField: [{ position: 20 }]
+  @UI.identification: [{ position: 20 }]
+  Vkorg;
+
+  @UI.lineItem: [{ position: 30, importance: #MEDIUM, label: 'Delivery Type' }]
+  @UI.identification: [{ position: 30 }]
+  Lfart;
+
+  @UI.lineItem: [{ position: 40, label: 'Shipping Point' }]
+  @UI.identification: [{ position: 40 }]
+  Vstel;
+
+  @UI.fieldGroup: [{ qualifier: 'Dates', position: 10, label: 'Planned Delivery Date' }]
+  Lfdat;
+
+  @UI.fieldGroup: [{ qualifier: 'Dates', position: 20, label: 'Actual Goods Movement' }]
+  WadatIst;
+
+  @UI.fieldGroup: [{ qualifier: 'Logistics', position: 10, label: 'Gross Weight' }]
+  Btgew;
+
+  @UI.fieldGroup: [{ qualifier: 'Logistics', position: 20, label: 'Net Weight' }]
+  Ntgew;
+
+  @UI.fieldGroup: [{ qualifier: 'Logistics', position: 30, label: 'Unit' }]
+  Gewei;
+
+  @UI.identification: [{ position: 50, label: 'Created By' }]
+  CreatedBy;
+
+  @UI.identification: [{ position: 60, label: 'Created At' }]
+  CreatedAt;
+}
