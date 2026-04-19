@@ -58,8 +58,30 @@ CLASS lhc_DelHead IMPLEMENTATION.
     DATA ls_likp TYPE ylikp.
     LOOP AT entities INTO DATA(entity).
 
+      "BAPI or a FM Call  in standard scenarios
+
       ls_likp = VALUE #( vbeln = entity-Vbeln ).
       lbc_DelHead=>ls_likp = ls_likp.
+      IF sy-subrc = 0.
+        APPEND VALUE #( vbeln = ls_likp-vbeln ) TO mapped-delhead.
+      ELSE.
+        APPEND VALUE #( vbeln = ls_likp-vbeln ) TO failed-delhead.
+
+        APPEND VALUE #( vbeln = ls_likp-vbeln
+                        %msg  = new_message( id     = 'TST1'
+                                             number = '001'
+                                             v1     = 'Create Delivery In-Progress'
+                                             severity = CONV #( 'I' ) ) ) TO reported-delhead.
+
+        APPEND VALUE #( vbeln = ls_likp-vbeln
+                        %msg  = new_message( id     = 'TST2'
+                                             number = '002'
+                                             v1     = 'Create Failed'
+                                             severity = CONV #( 'E' ) ) ) TO reported-delhead.
+
+
+      ENDIF.
+
 
     ENDLOOP.
 
@@ -75,6 +97,46 @@ CLASS lhc_DelHead IMPLEMENTATION.
   ENDMETHOD.
 
   METHOD lock.
+
+
+    TRY.
+        DATA(lo_lock) = cl_abap_lock_object_factory=>get_instance( iv_name = 'EYLIKP' ).
+      CATCH cx_abap_lock_failure iNTO data(lo_fail).
+      data(message) = lo_fail->get_text( ).
+
+    ENDTRY.
+
+    LOOP AT keys ASSIGNING FIELD-SYMBOL(<key>).
+      TRY.
+          lo_lock->enqueue(
+            it_parameter  = VALUE #( (  name = 'vbeln' value = REF #( <key>-Vbeln ) ) )
+          ).
+        CATCH cx_abap_foreign_lock INTO DATA(lo_flock).
+          APPEND VALUE #( vbeln = <key>-vbeln ) TO failed-delhead.
+
+          APPEND VALUE #( vbeln = <key>-vbeln
+                             %msg  = new_message( id     = 'LOC'
+                                                  number = '003'
+                                                  v1     = lo_flock->get_text( )
+                                                  v2     = lo_flock->user_name
+                                                  severity = CONV #( 'E' ) ) ) TO reported-delhead.
+        CATCH cx_abap_lock_failure.
+          APPEND VALUE #( vbeln = <key>-vbeln ) TO failed-delhead.
+
+          APPEND VALUE #( vbeln = <key>-vbeln
+                             %msg  = new_message( id     = 'LOC'
+                                                  number = '004'
+                                                  v1     = lo_flock->get_text( )
+                                                  v2     = lo_flock->user_name
+                                                  severity = CONV #( 'E' ) ) ) TO reported-delhead.
+
+      ENDTRY.
+
+    ENDLOOP.
+
+
+
+
   ENDMETHOD.
 
   METHOD rba_Item.
@@ -145,7 +207,7 @@ CLASS lsc_ZR_DELIVERYHEADERTP IMPLEMENTATION.
 
 
     IF lbc_DelHead=>lf_create = abap_true.
-      MoDIFY ylikp FROM @lbc_DelHead=>ls_likp.
+      MODIFY ylikp FROM @lbc_DelHead=>ls_likp.
       IF sy-subrc <> 0.
 
       ENDIF.

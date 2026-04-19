@@ -13,9 +13,16 @@ authorization master ( instance )
   field ( readonly : update ) Vbeln;
   association _item { create; }
 
-  mapping for ylikp
+  mapping for ylikp control ylikp_control_struct
     {
       Vbeln   = vbeln;
+      Ernam   = ernam;
+      Erzet   = erzet;
+      Erdat   = erdat;
+      Bzirk   = bzirk;
+      Vstel   = vstel;
+      Vkorg   = vkorg;
+      Lfart   = lfart;
     }
 }
 
