@@ -1,0 +1,6 @@
+@EndUserText.label: 'ZRC_YACDOCA'
+@MappingRole: true
+define role ZRC_YACDOCA {
+  grant select on ZRC_YACDOCA
+  where INHERITING CONDITIONS FROM ENTITY ZRR_YACDOCA REPLACING { ROOT WITH _BaseEntity };
+}

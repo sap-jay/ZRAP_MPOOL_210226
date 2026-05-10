@@ -1,0 +1,4 @@
+@EndUserText.label: 'Universal Journal Entry'
+define service ZSD_UniveralJournalEntry {
+  expose ZC_UnivJournalEntry;
+}

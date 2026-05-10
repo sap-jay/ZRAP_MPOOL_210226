@@ -1,0 +1,85 @@
+managed implementation in class ZRBP_R_YACDOCA unique;
+strict ( 2 );
+with draft;
+extensible;
+define behavior for ZRR_YACDOCA alias ZrrYacdoca
+persistent table YACDOCA
+extensible
+draft table ZRYACDOCA_D
+etag master LocalLastChangedAt
+lock master total etag LastChangedAt
+authorization master( global )
+{
+  field ( mandatory : create )
+   Rldnr,
+   Rbukrs,
+   Gjahr,
+   Belnr,
+   Docln;
+
+  field ( readonly )
+   LastChangedAt,
+   LocalLastChangedAt;
+
+  field ( readonly : update )
+   Rldnr,
+   Rbukrs,
+   Gjahr,
+   Belnr,
+   Docln;
+
+
+  create;
+  update;
+  delete;
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
+
+  mapping for YACDOCA corresponding extensible
+  {
+    Rldnr = RLDNR;
+    Rbukrs = RBUKRS;
+    Gjahr = GJAHR;
+    Belnr = BELNR;
+    Docln = DOCLN;
+    Blart = BLART;
+    Budat = BUDAT;
+    Bldat = BLDAT;
+    Monat = MONAT;
+    Fiscyearper = FISCYEARPER;
+    Racct = RACCT;
+    Kostl = KOSTL;
+    Prctr = PRCTR;
+    Segment = SEGMENT;
+    Rbusa = RBUSA;
+    Kokrs = KOKRS;
+    PsPosid = PS_POSID;
+    Rtcur = RTCUR;
+    Rhcur = RHCUR;
+    Rkcur = RKCUR;
+    Tsl = TSL;
+    Hsl = HSL;
+    Ksl = KSL;
+    Runit = RUNIT;
+    Msl = MSL;
+    Ebeln = EBELN;
+    Ebelp = EBELP;
+    Matnr = MATNR;
+    Werks = WERKS;
+    Kunnr = KUNNR;
+    Lifnr = LIFNR;
+    Usnam = USNAM;
+    Cpudt = CPUDT;
+    Cputm = CPUTM;
+    Drcrk = DRCRK;
+    CreatedAt = CREATED_AT;
+    LastChangedBy = LAST_CHANGED_BY;
+    LastChangedAt = LAST_CHANGED_AT;
+    LocalLastChangedAt = LOCAL_LAST_CHANGED_AT;
+  }
+
+}

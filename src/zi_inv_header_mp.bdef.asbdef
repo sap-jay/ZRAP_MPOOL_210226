@@ -1,0 +1,102 @@
+managed
+with additional save
+implementation in class zbp_i_inv_header_mp unique;
+strict ( 2 );
+
+define behavior for ZI_INV_HEADER_MP alias InvHeader
+persistent table zinv_header
+lock master
+authorization master ( global )
+etag master LocalLastChangedAt
+{
+  field ( readonly, numbering:managed ) InvoiceUuid;
+  field ( readonly )  CreatedBy, CreatedAt, LastChangedBy, LastChangedAt, LocalLastChangedAt;
+  field ( readonly : update ) CompanyCode;
+
+  field ( mandatory : create ) CompanyCode, VendorId, InvoiceDate, Currency, GrossAmount;
+
+  create;
+  update;
+  delete;
+
+  association _Items { create; }
+
+  // ── Determinations ──────────────────────────────────────────
+  determination DeriveTaxAmount on modify { field GrossAmount; }
+  determination DeriveDueDate on modify { field InvoiceDate; }
+
+  // ── Validations ─────────────────────────────────────────────
+  validation ValidateMandatory on save { create; update; }
+  validation ValidateAmount on save { create; update; field GrossAmount; }
+  validation ValidateDates on save { create; update; field InvoiceDate, PostingDate; }
+  validation ValidateItemTotals on save { create; update; }
+
+  // ── Actions ─────────────────────────────────────────────────
+  action ( features : instance ) PostInvoice result [1] $self;
+  action ( features : instance ) ReverseInvoice result [1] $self;
+
+  // ── Mapping ─────────────────────────────────────────────────
+  mapping for zinv_header corresponding
+    {
+      InvoiceUuid        = invoice_uuid;
+      CompanyCode        = company_code;
+      VendorId           = vendor_id;
+      InvoiceDate        = invoice_date;
+      PostingDate        = posting_date;
+      Reference          = reference;
+      Currency           = currency;
+      GrossAmount        = gross_amount;
+      TaxAmount          = tax_amount;
+      PaymentTerms       = payment_terms;
+      DocumentType       = document_type;
+      HeaderText         = header_text;
+      Status             = status;
+      SapDocNumber       = sap_doc_number;
+      CreatedBy          = created_by;
+      CreatedAt          = created_at;
+      LastChangedBy      = last_changed_by;
+      LastChangedAt      = last_changed_at;
+      LocalLastChangedAt = local_last_changed_at;
+    }
+}
+
+define behavior for ZI_INV_ITEM_MP alias InvItem
+persistent table zinv_item
+lock dependent by _Header
+authorization dependent by _Header
+etag master LocalLastChangedAt
+{
+  field ( readonly, numbering:managed ) ItemUuid;
+  field ( readonly )  InvoiceUuid;
+  field ( mandatory ) Amount, Currency;
+
+  update;
+  delete;
+
+  association _Header;
+
+  //── Side effects: item amount change → recompute header ─────
+  side effects
+  {
+    field Amount affects field _Header.( GrossAmount, TaxAmount );
+  }
+
+  //── Validations ─────────────────────────────────────────────
+  validation ValidateItemAmount on save { create; update; field Amount; }
+
+  //── Mapping ─────────────────────────────────────────────────
+  mapping for zinv_item corresponding
+    {
+      ItemUuid           = item_uuid;
+      InvoiceUuid        = invoice_uuid;
+      ItemNo             = item_no;
+      Amount             = amount;
+      Currency           = currency;
+      Quantity           = quantity;
+      Unit               = unit;
+      TaxCode            = tax_code;
+      MatchStatus        = match_status;
+      LocalLastChangedAt = local_last_changed_at;
+      LastChangedAt      = last_changed_at;
+    }
+}

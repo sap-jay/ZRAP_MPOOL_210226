@@ -1,0 +1,27 @@
+managed with additional save
+implementation in class zbp_r_univjournalentry unique;
+strict ( 2 );
+
+define behavior for ZR_UnivJournalEntry //alias <alias_name>
+persistent table yacdoca
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create ( authorization : global );
+  update;
+  delete;
+
+  field ( readonly : update ) Rldnr, Rbukrs, Gjahr, Belnr, Docln;
+
+  action PostVendorInv;
+
+  validation validateCurrency on save { field Rtcur; create; update; }
+
+  determination calulateAmtInBalCur on save { create; field Rtcur; }
+
+  side effects { field Kostl affects field Werks; }
+
+
+
+}

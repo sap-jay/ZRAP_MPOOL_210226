@@ -1,0 +1,5 @@
+CLASS zbp_i_inv_header_mp DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF zi_inv_header_mp.
+ENDCLASS.
+
+CLASS zbp_i_inv_header_mp IMPLEMENTATION.
+ENDCLASS.

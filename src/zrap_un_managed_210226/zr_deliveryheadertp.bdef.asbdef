@@ -4,8 +4,9 @@ strict ( 2 );
 define behavior for ZR_DeliveryHeaderTp alias DelHead
 //late numbering
 lock master
+//total etag LastChangedAt
 authorization master ( instance )
-//etag master <field_name>
+etag master LastChangedAt
 {
   create ( authorization : global );
   update;

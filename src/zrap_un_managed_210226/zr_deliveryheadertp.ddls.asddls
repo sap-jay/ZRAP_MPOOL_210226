@@ -39,7 +39,9 @@ composition [1..*] of ZI_DeliveryItem as _item
     WadatIst,
     CreatedBy,
     CreatedAt,
+    @Semantics.user.lastChangedBy: true
     LastChangedBy,
+    @Semantics.systemDateTime.lastChangedAt: true
     LastChangedAt,
     _item // Make association public
 }

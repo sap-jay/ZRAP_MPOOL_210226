@@ -1,0 +1,22 @@
+projection;
+strict ( 2 );
+
+define behavior for ZC_INV_HEADER_MP alias InvHeader
+{
+  use create;
+  use update;
+  use delete;
+
+  use action PostInvoice;
+  use action ReverseInvoice;
+
+  use association _Items { create; }
+}
+
+define behavior for ZC_INV_ITEM_MP alias InvItem
+{
+  use update;
+  use delete;
+
+  use association _Header;
+}

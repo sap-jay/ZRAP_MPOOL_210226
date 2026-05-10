@@ -13,6 +13,9 @@ CLASS lbc_DelHead IMPLEMENTATION.
 ENDCLASS.
 
 CLASS lhc_DelHead DEFINITION INHERITING FROM cl_abap_behavior_handler.
+  PUBLIC SECTION.
+    DATA : update_allowed TYPE flag,
+           delete_allowed TYPE flag.
   PRIVATE SECTION.
 
     METHODS get_instance_authorizations FOR INSTANCE AUTHORIZATION
@@ -42,11 +45,56 @@ CLASS lhc_DelHead DEFINITION INHERITING FROM cl_abap_behavior_handler.
     METHODS cba_Item FOR MODIFY
       IMPORTING entities_cba FOR CREATE DelHead\_Item.
 
+
 ENDCLASS.
 
 CLASS lhc_DelHead IMPLEMENTATION.
 
   METHOD get_instance_authorizations.
+
+
+    READ ENTITIES OF ZR_DeliveryHeaderTp IN LOCAL MODE
+    ENTITY DelHead
+    FIELDS ( Vbeln ) WITH CORRESPONDING #( keys )
+    RESULT  DATA(deliveries)
+    FAILED failed.
+
+    CHECK deliveries IS NOT INITIAL.
+
+    SELECT * FROM ylikp
+    FOR ALL ENTRIES IN @deliveries
+    WHERE vbeln = @deliveries-vbeln
+    ORDER BY PRIMARY KEY
+    INTO TABLE @DATA(lt_likp).
+
+
+
+
+    LOOP AT keys ASSIGNING FIELD-SYMBOL(<key>).
+
+      IF COND #( WHEN requested_authorizations-%update = if_abap_behv=>mk-on THEN abap_true ELSE abap_false ) = abap_true.
+        "check auth object for update
+        IF update_allowed = abap_false.
+          "APPEND VALUE #( %tky = <key>-%tky ) TO failed-delhead.
+          APPEND VALUE #( %tky = <key>-%tky
+                          %msg = new_message_with_text( severity = if_abap_behv_message=>severity-error
+                                                        text = 'Not Authorised' ) ) TO reported-delhead.
+          "APPEND VALUE #( %tky = <key>-%tky
+          "%update = if_abap_behv=>auth-unauthorized
+          "%delete = if_abap_behv=>auth-unauthorized )  TO result.
+        ENDIF.
+
+
+
+      ENDIF.
+      IF COND #( WHEN requested_authorizations-%delete = if_abap_behv=>mk-on THEN abap_true ELSE abap_false ) = abap_true.
+        "check auth object for delete
+      ENDIF.
+
+    ENDLOOP.
+
+
+
   ENDMETHOD.
 
   METHOD get_global_authorizations.
@@ -101,8 +149,8 @@ CLASS lhc_DelHead IMPLEMENTATION.
 
     TRY.
         DATA(lo_lock) = cl_abap_lock_object_factory=>get_instance( iv_name = 'EYLIKP' ).
-      CATCH cx_abap_lock_failure iNTO data(lo_fail).
-      data(message) = lo_fail->get_text( ).
+      CATCH cx_abap_lock_failure INTO DATA(lo_fail).
+        DATA(message) = lo_fail->get_text( ).
 
     ENDTRY.
 
@@ -143,6 +191,35 @@ CLASS lhc_DelHead IMPLEMENTATION.
   ENDMETHOD.
 
   METHOD cba_Item.
+    DATA ls_lips TYPE ylips.
+
+    LOOP AT entities_cba ASSIGNING FIELD-SYMBOL(<entity_cba>).
+      lbc_DelHead=>lf_create = abap_true.
+
+      ls_lips = VALUE #( vbeln = <entity_cba>-Vbeln ).
+      lbc_DelHead=>ls_lips = ls_lips.
+      IF sy-subrc = 0.
+        APPEND VALUE #( vbeln = ls_lips-vbeln ) TO mapped-delhead.
+      ELSE.
+        APPEND VALUE #( vbeln = ls_lips-vbeln ) TO failed-delhead.
+
+        APPEND VALUE #( vbeln = ls_lips-vbeln
+                        %msg  = new_message( id     = 'TST1'
+                                             number = '001'
+                                             v1     = 'Create Delivery Item In-Progress'
+                                             severity = CONV #( 'I' ) ) ) TO reported-delhead.
+
+        APPEND VALUE #( vbeln = ls_lips-vbeln
+                        %msg  = new_message( id     = 'TST2'
+                                             number = '002'
+                                             v1     = 'Create Delivery Item Failed'
+                                             severity = CONV #( 'E' ) ) ) TO reported-delhead.
+
+      ENDIF.
+
+
+    ENDLOOP.
+
   ENDMETHOD.
 
 ENDCLASS.
@@ -207,10 +284,21 @@ CLASS lsc_ZR_DELIVERYHEADERTP IMPLEMENTATION.
 
 
     IF lbc_DelHead=>lf_create = abap_true.
-      MODIFY ylikp FROM @lbc_DelHead=>ls_likp.
-      IF sy-subrc <> 0.
+      IF lbc_DelHead=>ls_likp IS NOT INITIAL.
+        MODIFY ylikp FROM @lbc_DelHead=>ls_likp.
+        IF sy-subrc <> 0.
 
+        ENDIF.
       ENDIF.
+
+      IF lbc_DelHead=>ls_lips IS NOT INITIAL.
+        MODIFY ylips FROM @lbc_DelHead=>ls_lips.
+        IF sy-subrc <> 0.
+
+        ENDIF.
+      ENDIF.
+
+
     ENDIF.
   ENDMETHOD.
 

@@ -1,0 +1,6 @@
+@EndUserText.label: 'ZRR_YACDOCA'
+@MappingRole: true
+define role ZRR_YACDOCA {
+  grant select on ZRR_YACDOCA
+  where TRUE;
+}

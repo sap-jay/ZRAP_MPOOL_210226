@@ -1,0 +1,104 @@
+@Metadata.layer: #CUSTOMER
+annotate view ZC_INV_HEADER_MP with
+{
+
+  @UI.facet: [
+    { id:              'HeaderData',
+      type:            #COLLECTION,
+      label:           'Invoice Details',
+      position:        10 },
+    { id:              'HeaderFields',
+      type:            #FIELDGROUP_REFERENCE,
+      parentId:        'HeaderData',
+      targetQualifier: 'HeaderGrp',
+      position:        10 },
+    { id:              'AmountFields',
+      type:            #FIELDGROUP_REFERENCE,
+      parentId:        'HeaderData',
+      targetQualifier: 'AmountGrp',
+      position:        20 },
+    { id:              'StatusFields',
+      type:            #FIELDGROUP_REFERENCE,
+      parentId:        'HeaderData',
+      targetQualifier: 'StatusGrp',
+      position:        30 },
+    { id:              'Items',
+      type:            #LINEITEM_REFERENCE,
+      label:           'Line Items',
+      targetElement:   '_Items',
+      position:        20 }
+  ]
+
+
+  @UI.lineItem: [
+    { type: #FOR_ACTION, dataAction: 'PostInvoice',
+      label: 'Post Invoice',    position: 80 },
+    { type: #FOR_ACTION, dataAction: 'ReverseInvoice',
+      label: 'Reverse Invoice', position: 90 }
+  ]
+  InvoiceUuid;
+
+  @UI.lineItem:       [{ position: 10, label: 'Vendor' }]
+  @UI.fieldGroup:     [{ qualifier: 'HeaderGrp', position: 10, label: 'Vendor' }]
+  @UI.selectionField: [{ position: 10 }]
+  VendorId;
+
+  @UI.lineItem:       [{ position: 20, label: 'Company Code' }]
+  @UI.fieldGroup:     [{ qualifier: 'HeaderGrp', position: 20, label: 'Company Code' }]
+  @UI.selectionField: [{ position: 20 }]
+  CompanyCode;
+
+  @UI.lineItem:   [{ position: 30, label: 'Invoice Date' }]
+  @UI.fieldGroup: [{ qualifier: 'HeaderGrp', position: 30, label: 'Invoice Date' }]
+  InvoiceDate;
+
+  @UI.fieldGroup: [{ qualifier: 'HeaderGrp', position: 40, label: 'Posting Date' }]
+  PostingDate;
+
+  @UI.fieldGroup: [{ qualifier: 'HeaderGrp', position: 50, label: 'Reference' }]
+  Reference;
+
+  @UI.fieldGroup: [{ qualifier: 'HeaderGrp', position: 60, label: 'Header Text' }]
+  HeaderText;
+
+  @UI.fieldGroup: [{ qualifier: 'HeaderGrp', position: 70, label: 'Payment Terms' }]
+  PaymentTerms;
+
+  @UI.fieldGroup: [{ qualifier: 'HeaderGrp', position: 80, label: 'Document Type' }]
+  DocumentType;
+
+  @UI.fieldGroup: [{ qualifier: 'HeaderGrp', position: 90, label: 'Fiscal Year' }]
+  FiscalYear;
+
+  @UI.lineItem:   [{ position: 40, label: 'Gross Amount' }]
+  @UI.fieldGroup: [{ qualifier: 'AmountGrp', position: 10, label: 'Gross Amount' }]
+  GrossAmount;
+
+  @UI.fieldGroup: [{ qualifier: 'AmountGrp', position: 20, label: 'Tax Amount' }]
+  TaxAmount;
+
+  @UI.lineItem:   [{ position: 50, label: 'Currency' }]
+  @UI.fieldGroup: [{ qualifier: 'AmountGrp', position: 30, label: 'Currency' }]
+  Currency;
+
+  @UI.lineItem:       [{ position: 60, label: 'Status' }]
+  @UI.fieldGroup:     [{ qualifier: 'StatusGrp', position: 10, label: 'Status' }]
+  @UI.selectionField: [{ position: 30 }]
+  Status;
+
+  @UI.lineItem:   [{ position: 70, label: 'SAP Doc No.' }]
+  @UI.fieldGroup: [{ qualifier: 'StatusGrp', position: 20, label: 'SAP Doc Number' }]
+  SapDocNumber;
+
+  @UI.fieldGroup: [{ qualifier: 'StatusGrp', position: 30, label: 'Error Code' }]
+  ErrorCode;
+
+  @UI.fieldGroup: [{ qualifier: 'StatusGrp', position: 40, label: 'Error Message' }]
+  ErrorMessage;
+
+  @UI.fieldGroup: [{ qualifier: 'StatusGrp', position: 50, label: 'Retry Count' }]
+  RetryCount;
+
+  @UI.fieldGroup: [{ qualifier: 'StatusGrp', position: 60, label: 'Manually Created' }]
+  ManuallyCreated;
+}

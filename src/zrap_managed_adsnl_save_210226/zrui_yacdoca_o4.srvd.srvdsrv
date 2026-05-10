@@ -1,0 +1,11 @@
+@EndUserText: {
+  label: 'Service Definition for ZRC_YACDOCA'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZRC_YACDOCA'
+  }
+}
+define service ZRUI_YACDOCA_O4 provider contracts odata_v4_ui {
+  expose ZRC_YACDOCA;
+}

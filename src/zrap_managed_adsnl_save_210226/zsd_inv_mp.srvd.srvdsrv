@@ -1,0 +1,6 @@
+@EndUserText.label: 'Invoice Demo Service Definition'
+define service ZSD_INV_MP {
+  expose ZC_INV_HEADER_MP as InvoiceHeader;
+  expose ZC_INV_ITEM_MP   as InvoiceItem;
+  expose I_Currency;
+}
